@@ -1,1254 +1,188 @@
- .private-action                                    |      1 +
- __steamcmd/linux32/crashhandler.so                 |      3 +
- __steamcmd/linux32/libstdc++.so.6                  |    Bin 0 -> 922059 bytes
- __steamcmd/linux32/libtier0_s.so                   |      3 +
- __steamcmd/linux32/libvstdlib_s.so                 |      3 +
- __steamcmd/linux32/steamclient.so                  |      3 +
- __steamcmd/linux32/steamcmd                        |    Bin 0 -> 5190488 bytes
- __steamcmd/linux32/steamconsole.so                 |      3 +
- __steamcmd/linux32/steamerrorreporter              |    Bin 0 -> 130612 bytes
- __steamcmd/linux64/steamclient.so                  |      3 +
- __steamcmd/package/steam_cmd_linux.installed       |    119 +
- __steamcmd/package/steam_cmd_linux.manifest        |     45 +
- ...186bec4abec5d6a7fd92f61c26b02f68d507cc_14711419 |    Bin 0 -> 14711172 bytes
- ...3ab7dfe35876c951abf83aec21d2640c5db0f24_1581407 |    Bin 0 -> 1581387 bytes
- ....a2579d4f33558caf8a7a8b18ef7e526a9feb1d5d_28154 |    Bin 0 -> 28154 bytes
- ...abf53f48603d0f8e14468e586dad6113c4c72f_36157276 |    Bin 0 -> 36156713 bytes
- __steamcmd/public/steambootstrapper_brazilian.txt  |     82 +
- __steamcmd/public/steambootstrapper_bulgarian.txt  |     82 +
- __steamcmd/public/steambootstrapper_czech.txt      |     82 +
- __steamcmd/public/steambootstrapper_danish.txt     |     82 +
- __steamcmd/public/steambootstrapper_dutch.txt      |     82 +
- __steamcmd/public/steambootstrapper_english.txt    |     44 +
- __steamcmd/public/steambootstrapper_finnish.txt    |     82 +
- __steamcmd/public/steambootstrapper_french.txt     |     82 +
- __steamcmd/public/steambootstrapper_german.txt     |     82 +
- __steamcmd/public/steambootstrapper_greek.txt      |     82 +
- __steamcmd/public/steambootstrapper_hungarian.txt  |     82 +
- __steamcmd/public/steambootstrapper_italian.txt    |     82 +
- __steamcmd/public/steambootstrapper_japanese.txt   |     82 +
- __steamcmd/public/steambootstrapper_korean.txt     |     82 +
- __steamcmd/public/steambootstrapper_koreana.txt    |     82 +
- __steamcmd/public/steambootstrapper_latam.txt      |     82 +
- __steamcmd/public/steambootstrapper_norwegian.txt  |     82 +
- __steamcmd/public/steambootstrapper_polish.txt     |     82 +
- __steamcmd/public/steambootstrapper_portuguese.txt |     82 +
- __steamcmd/public/steambootstrapper_romanian.txt   |     82 +
- __steamcmd/public/steambootstrapper_russian.txt    |     82 +
- __steamcmd/public/steambootstrapper_schinese.txt   |     82 +
- __steamcmd/public/steambootstrapper_spanish.txt    |     82 +
- __steamcmd/public/steambootstrapper_swedish.txt    |     82 +
- __steamcmd/public/steambootstrapper_tchinese.txt   |     82 +
- __steamcmd/public/steambootstrapper_thai.txt       |     82 +
- __steamcmd/public/steambootstrapper_turkish.txt    |     82 +
- __steamcmd/public/steambootstrapper_ukrainian.txt  |     82 +
- __steamcmd/public/steambootstrapper_vietnamese.txt |     82 +
- __steamcmd/siteserverui/linux64/LICENSE            |     20 +
- .../siteserverui/linux64/LICENSES.chromium.html    |  35253 ++++
- .../linux64/blink_image_resources_200_percent.pak  |      3 +
- .../linux64/content_resources_200_percent.pak      |      3 +
- __steamcmd/siteserverui/linux64/content_shell.pak  |      3 +
- __steamcmd/siteserverui/linux64/icudtl.dat         |      3 +
- __steamcmd/siteserverui/linux64/libffmpeg.so       |      3 +
- __steamcmd/siteserverui/linux64/libnode.so         |      3 +
- __steamcmd/siteserverui/linux64/locales/am.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/ar.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/bg.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/bn.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/ca.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/cs.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/da.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/de.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/el.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/en-GB.pak  |      3 +
- __steamcmd/siteserverui/linux64/locales/en-US.pak  |      3 +
- __steamcmd/siteserverui/linux64/locales/es-419.pak |      3 +
- __steamcmd/siteserverui/linux64/locales/es.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/et.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/fa.pak     |      3 +
- .../siteserverui/linux64/locales/fake-bidi.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/fi.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/fil.pak    |      3 +
- __steamcmd/siteserverui/linux64/locales/fr.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/gu.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/he.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/hi.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/hr.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/hu.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/id.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/it.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/ja.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/kn.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/ko.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/lt.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/lv.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/ml.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/mr.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/ms.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/nb.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/nl.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/pl.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/pt-BR.pak  |      3 +
- __steamcmd/siteserverui/linux64/locales/pt-PT.pak  |      3 +
- __steamcmd/siteserverui/linux64/locales/ro.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/ru.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/sk.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/sl.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/sr.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/sv.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/sw.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/ta.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/te.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/th.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/tr.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/uk.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/vi.pak     |      3 +
- __steamcmd/siteserverui/linux64/locales/zh-CN.pak  |      3 +
- __steamcmd/siteserverui/linux64/locales/zh-TW.pak  |      3 +
- __steamcmd/siteserverui/linux64/natives_blob.bin   |      3 +
- .../siteserverui/linux64/pdf_viewer_resources.pak  |      3 +
- __steamcmd/siteserverui/linux64/resources/app.asar |    Bin 0 -> 25640010 bytes
- .../siteserverui/linux64/resources/electron.asar   |    Bin 0 -> 240641 bytes
- __steamcmd/siteserverui/linux64/siteserverui       |    Bin 0 -> 73936109 bytes
- __steamcmd/siteserverui/linux64/snapshot_blob.bin  |      3 +
- .../linux64/ui_resources_200_percent.pak           |      3 +
- __steamcmd/siteserverui/linux64/version            |      1 +
- .../linux64/views_resources_200_percent.pak        |      3 +
- .../b2659c540592221fcd7675d76a0171f4b3782c1c.zip   |      3 +
- __steamcmd/steamcmd.sh                             |     45 +
- __steamcmd_linux.tar.gz                            |    Bin 0 -> 2428523 bytes
- bin/AdminServer.dll                                |      3 +
- bin/CmdSeq.wc                                      |      3 +
- bin/Faceposer.bat                                  |     10 +
- bin/FileSystemOpenDialog.dll                       |      3 +
- bin/FileSystem_Stdio.dll                           |      3 +
- bin/GameUI.dll                                     |      3 +
- bin/HLMV.bat                                       |     10 +
- bin/Hammer.bat                                     |     10 +
- bin/MakeScenesImage.exe                            |      3 +
- bin/MaterialSystem.dll                             |      3 +
- bin/Mss32.dll                                      |      3 +
- bin/SDL2.dll                                       |      3 +
- bin/ServerBrowser.dll                              |      3 +
- bin/SoundEmitterSystem.dll                         |      3 +
- bin/StudioRender.dll                               |      3 +
- bin/base.fgd                                       |   6578 +
- bin/basehaptics.txt                                |    117 +
- bin/binkw32.dll                                    |      3 +
- bin/bsppack.dll                                    |      3 +
- bin/bspzip.exe                                     |      3 +
- bin/bugreporter.dll                                |      3 +
- bin/bugreporter_filequeue.dll                      |      3 +
- bin/bugreporter_public.dll                         |      3 +
- bin/captioncompiler.exe                            |      3 +
- bin/check_sdk_env.bat                              |     11 +
- bin/datacache.dll                                  |      3 +
- bin/datamodel.dll                                  |      3 +
- bin/demoinfo.exe                                   |      3 +
- bin/dmserializers.dll                              |      3 +
- bin/dmxconvert.exe                                 |      3 +
- bin/dmxedit.exe                                    |      3 +
- bin/dxsupport.cfg                                  |  14763 ++
- bin/dxsupport.csv                                  |    888 +
- bin/dxsupport_episodic.cfg                         |     31 +
- bin/dxsupport_sp.cfg                               |  12566 ++
- bin/elementviewer.exe                              |      3 +
- bin/engine.dll                                     |      3 +
- bin/filters/add1x1.ico                             |      3 +
- bin/filters/add3x3.ico                             |      3 +
- bin/filters/add5x5.ico                             |      3 +
- bin/filters/add7x7.ico                             |      3 +
- bin/filters/add9x9.ico                             |      3 +
- bin/filters/dispfilters.txt                        |    205 +
- bin/filters/flat1x1.ico                            |      3 +
- bin/filters/flat3x3.ico                            |      3 +
- bin/filters/flat5x5.ico                            |      3 +
- bin/filters/flat7x7.ico                            |      3 +
- bin/filters/flat9x9.ico                            |      3 +
- bin/filters/raiseto1x1.ico                         |      3 +
- bin/filters/raiseto5x5.ico                         |      3 +
- bin/filters/smooth3x3.ico                          |      3 +
- bin/glview.exe                                     |      3 +
- bin/halflife2.fgd                                  |   4671 +
- bin/hammer.exe                                     |      3 +
- bin/hammer_dll.dll                                 |      3 +
- bin/haptics.dll                                    |      3 +
- bin/height2normal.exe                              |      3 +
- bin/height2normal.ico                              |      3 +
- bin/height2ssbump.exe                              |      3 +
- bin/hlfaceposer.exe                                |      3 +
- bin/hlmv.exe                                       |      3 +
- bin/icudt.dll                                      |      3 +
- bin/icudt42.dll                                    |      3 +
- bin/inputsystem.dll                                |      3 +
- bin/itemtest.com                                   |      3 +
- bin/launcher.dll                                   |      3 +
- bin/libcurl.dll                                    |      3 +
- bin/libfbxsdk.dll                                  |      3 +
- bin/libsasl.dll                                    |      3 +
- bin/mdllib.dll                                     |      3 +
- bin/mksheet.exe                                    |      3 +
- bin/motionmapper.exe                               |      3 +
- bin/motionmappertemplates/default.mmt              |     33 +
- bin/motionmappertemplates/rootLock.mmt             |     44 +
- bin/motionmappertemplates/template1.mmt            |     51 +
- bin/motionmappertemplates/template2.mmt            |     47 +
- bin/motionmappertemplates/template3.mmt            |     45 +
- bin/motionmappertemplates/template4.mmt            |     51 +
- bin/motionmappertemplates/template5.mmt            |     48 +
- bin/motionmappertemplates/template6.mmt            |     48 +
- bin/motionmappertemplates/template7.mmt            |     48 +
- .../twoHandedShoulderWeapon.mmt                    |     46 +
- bin/motionmappertemplates/twoHandedWeapon.mmt      |     45 +
- bin/motionmappertemplates/walk.mmt                 |     41 +
- bin/mssdolby.flt                                   |      3 +
- bin/mssds3d.flt                                    |      3 +
- bin/mssdsp.flt                                     |      3 +
- bin/msseax.flt                                     |      3 +
- bin/mssmp3.asi                                     |      3 +
- bin/msssrs.flt                                     |      3 +
- bin/mssvoice.asi                                   |      3 +
- bin/msvcr71.dll                                    |      3 +
- bin/mysql_wrapper.dll                              |      3 +
- bin/normal2ssbump.exe                              |      3 +
- bin/openvr_api.dll                                 |      3 +
- bin/pfm2tgas.exe                                   |      3 +
- bin/phonemeextractors/ims_helper.dll               |      3 +
- bin/phonemeextractors/phonemeextractor.dll         |      3 +
- bin/phonemeextractors/phonemeextractor_ims.dll     |      3 +
- bin/qc_eyes.exe                                    |      3 +
- bin/replay.dll                                     |      3 +
- bin/scenefilecache.dll                             |      3 +
- bin/sdkenginetools.txt                             |      6 +
- bin/serverplugin_empty.dll                         |      3 +
- bin/set_sdk_env.bat                                |     18 +
- bin/shaderapidx9.dll                               |      3 +
- bin/shaderapiempty.dll                             |      3 +
- bin/shadercompile.exe                              |      3 +
- bin/shadercompile_dll.dll                          |      3 +
- bin/sixense.dll                                    |      3 +
- bin/sixense_utils.dll                              |      3 +
- bin/soundsystem.dll                                |      3 +
- bin/sourcevr.dll                                   |      3 +
- bin/splitskybox.exe                                |      3 +
- bin/stdshader_dbg.dll                              |      3 +
- bin/stdshader_dx6.dll                              |      3 +
- bin/stdshader_dx7.dll                              |      3 +
- bin/stdshader_dx8.dll                              |      3 +
- bin/stdshader_dx9.dll                              |      3 +
- bin/steam_api.dll                                  |      3 +
- bin/steamerrorreporter.exe                         |      3 +
- bin/steamnetworkingsockets.dll                     |      3 +
- bin/studiomdl.exe                                  |      3 +
- bin/telemetry32.dll                                |      3 +
- bin/texturecompile_dll.dll                         |      3 +
- bin/tf.fgd                                         |   2941 +
- bin/tier0.dll                                      |      3 +
- bin/tools/commedit.dll                             |      3 +
- bin/tools/pet.dll                                  |      3 +
- bin/tools/vmt.dll                                  |      3 +
- bin/unicode.dll                                    |      3 +
- bin/unicows.dll                                    |      3 +
- bin/unitlib.dll                                    |      3 +
- bin/valvedeviceapi.dll                             |      3 +
- bin/vaudio_celt.dll                                |      3 +
- bin/vaudio_miles.dll                               |      3 +
- bin/vaudio_speex.dll                               |      3 +
- bin/vbsp.exe                                       |      3 +
- bin/vbspinfo.exe                                   |      3 +
- bin/vgui2.dll                                      |      3 +
- bin/vguimatsurface.dll                             |      3 +
- bin/vidcfg.bin                                     |      3 +
- bin/video_bink.dll                                 |      3 +
- bin/video_quicktime.dll                            |      3 +
- bin/video_services.dll                             |      3 +
- bin/vphysics.dll                                   |      3 +
- bin/vpk.exe                                        |      3 +
- bin/vrad.exe                                       |      3 +
- bin/vrad_dll.dll                                   |      3 +
- bin/vstdlib.dll                                    |      3 +
- bin/vtex.bat                                       |      8 +
- bin/vtex.dll                                       |      3 +
- bin/vtex.exe                                       |      3 +
- bin/vtex.ico                                       |      3 +
- bin/vtex_dll.dll                                   |      3 +
- bin/vtf2tga.exe                                    |      3 +
- bin/vvis.exe                                       |      3 +
- bin/vvis_dll.dll                                   |      3 +
- bin/xinput1_3.dll                                  |      3 +
- hl2.exe                                            |      3 +
- hl2/hl2_misc_000.vpk                               |      3 +
- hl2/hl2_misc_001.vpk                               |      3 +
- hl2/hl2_misc_002.vpk                               |      3 +
- hl2/hl2_misc_003.vpk                               |      3 +
- hl2/hl2_misc_dir.vpk                               |      3 +
- hl2/hl2_sound_misc.vpk.sound.cache                 |      3 +
- hl2/hl2_sound_misc_000.vpk                         |      3 +
- hl2/hl2_sound_misc_001.vpk                         |      3 +
- hl2/hl2_sound_misc_002.vpk                         |      3 +
- hl2/hl2_sound_misc_dir.vpk                         |      3 +
- hl2/hl2_sound_vo_english.vpk.sound.cache           |      3 +
- hl2/hl2_sound_vo_english_000.vpk                   |      3 +
- hl2/hl2_sound_vo_english_001.vpk                   |      3 +
- hl2/hl2_sound_vo_english_002.vpk                   |      3 +
- hl2/hl2_sound_vo_english_003.vpk                   |      3 +
- hl2/hl2_sound_vo_english_004.vpk                   |      3 +
- hl2/hl2_sound_vo_english_dir.vpk                   |      3 +
- hl2/hl2_textures_000.vpk                           |      3 +
- hl2/hl2_textures_001.vpk                           |      3 +
- hl2/hl2_textures_002.vpk                           |      3 +
- hl2/hl2_textures_003.vpk                           |      3 +
- hl2/hl2_textures_004.vpk                           |      3 +
- hl2/hl2_textures_005.vpk                           |      3 +
- hl2/hl2_textures_006.vpk                           |      3 +
- hl2/hl2_textures_007.vpk                           |      3 +
- hl2/hl2_textures_008.vpk                           |      3 +
- hl2/hl2_textures_009.vpk                           |      3 +
- hl2/hl2_textures_dir.vpk                           |      3 +
- hl2/media/startupvids.txt                          |      1 +
- hl2/media/valve.bik                                |      3 +
- hl2/resource/block.cur                             |      3 +
- hl2/resource/boxrocket.ttf                         |      3 +
- hl2/resource/boxrocket_english.txt                 |    Bin 0 -> 28610 bytes
- hl2/resource/chat_brazilian.txt                    |    Bin 0 -> 2066 bytes
- hl2/resource/chat_bulgarian.txt                    |    Bin 0 -> 2122 bytes
- hl2/resource/chat_czech.txt                        |    Bin 0 -> 2006 bytes
- hl2/resource/chat_danish.txt                       |    Bin 0 -> 2014 bytes
- hl2/resource/chat_dutch.txt                        |    Bin 0 -> 2052 bytes
- hl2/resource/chat_english.txt                      |    Bin 0 -> 798 bytes
- hl2/resource/chat_finnish.txt                      |    Bin 0 -> 2066 bytes
- hl2/resource/chat_french.txt                       |    Bin 0 -> 2038 bytes
- hl2/resource/chat_german.txt                       |    Bin 0 -> 2078 bytes
- hl2/resource/chat_greek.txt                        |    Bin 0 -> 2072 bytes
- hl2/resource/chat_hungarian.txt                    |    Bin 0 -> 2024 bytes
- hl2/resource/chat_italian.txt                      |    Bin 0 -> 2052 bytes
- hl2/resource/chat_japanese.txt                     |    Bin 0 -> 1860 bytes
- hl2/resource/chat_korean.txt                       |    Bin 0 -> 1832 bytes
- hl2/resource/chat_koreana.txt                      |    Bin 0 -> 1832 bytes
- hl2/resource/chat_latam.txt                        |    Bin 0 -> 2038 bytes
- hl2/resource/chat_norwegian.txt                    |    Bin 0 -> 2044 bytes
- hl2/resource/chat_polish.txt                       |    Bin 0 -> 2042 bytes
- hl2/resource/chat_portuguese.txt                   |    Bin 0 -> 2092 bytes
- hl2/resource/chat_romanian.txt                     |    Bin 0 -> 2050 bytes
- hl2/resource/chat_russian.txt                      |    Bin 0 -> 2046 bytes
- hl2/resource/chat_schinese.txt                     |    Bin 0 -> 1824 bytes
- hl2/resource/chat_spanish.txt                      |    Bin 0 -> 2042 bytes
- hl2/resource/chat_swedish.txt                      |    Bin 0 -> 2024 bytes
- hl2/resource/chat_tchinese.txt                     |    Bin 0 -> 1822 bytes
- hl2/resource/chat_thai.txt                         |    Bin 0 -> 1984 bytes
- hl2/resource/chat_turkish.txt                      |    Bin 0 -> 2048 bytes
- hl2/resource/chat_ukrainian.txt                    |    Bin 0 -> 2070 bytes
- hl2/resource/chat_vietnamese.txt                   |    Bin 0 -> 1800 bytes
- hl2/resource/closecaption_brazilian.dat            |      3 +
- hl2/resource/closecaption_brazilian.txt            |    Bin 0 -> 1098514 bytes
- hl2/resource/closecaption_bulgarian.dat            |      3 +
- hl2/resource/closecaption_bulgarian.txt            |    Bin 0 -> 1091868 bytes
- hl2/resource/closecaption_czech.dat                |      3 +
- hl2/resource/closecaption_czech.txt                |    Bin 0 -> 1080812 bytes
- hl2/resource/closecaption_danish.dat               |      3 +
- hl2/resource/closecaption_danish.txt               |    Bin 0 -> 1086286 bytes
- hl2/resource/closecaption_dutch.dat                |      3 +
- hl2/resource/closecaption_dutch.txt                |    Bin 0 -> 1095022 bytes
- hl2/resource/closecaption_english.dat              |      3 +
- hl2/resource/closecaption_english.txt              |    Bin 0 -> 521614 bytes
- hl2/resource/closecaption_finnish.dat              |      3 +
- hl2/resource/closecaption_finnish.txt              |    Bin 0 -> 1090770 bytes
- hl2/resource/closecaption_french.dat               |      3 +
- hl2/resource/closecaption_french.txt               |    Bin 0 -> 1094392 bytes
- hl2/resource/closecaption_german.dat               |      3 +
- hl2/resource/closecaption_german.txt               |    Bin 0 -> 1086060 bytes
- hl2/resource/closecaption_greek.dat                |      3 +
- hl2/resource/closecaption_greek.txt                |    Bin 0 -> 1120520 bytes
- hl2/resource/closecaption_hungarian.dat            |      3 +
- hl2/resource/closecaption_hungarian.txt            |    Bin 0 -> 1087774 bytes
- hl2/resource/closecaption_italian.dat              |      3 +
- hl2/resource/closecaption_italian.txt              |    Bin 0 -> 1087178 bytes
- hl2/resource/closecaption_japanese.dat             |      3 +
- hl2/resource/closecaption_japanese.txt             |    Bin 0 -> 968596 bytes
- hl2/resource/closecaption_korean.dat               |      3 +
- hl2/resource/closecaption_korean.txt               |    Bin 0 -> 976278 bytes
- hl2/resource/closecaption_koreana.dat              |      3 +
- hl2/resource/closecaption_koreana.txt              |    Bin 0 -> 976278 bytes
- hl2/resource/closecaption_latam.txt                |    Bin 0 -> 1083332 bytes
- hl2/resource/closecaption_norwegian.dat            |      3 +
- hl2/resource/closecaption_norwegian.txt            |    Bin 0 -> 1097356 bytes
- hl2/resource/closecaption_polish.dat               |      3 +
- hl2/resource/closecaption_polish.txt               |    Bin 0 -> 1104314 bytes
- hl2/resource/closecaption_portuguese.dat           |      3 +
- hl2/resource/closecaption_portuguese.txt           |    Bin 0 -> 1086596 bytes
- hl2/resource/closecaption_romanian.dat             |      3 +
- hl2/resource/closecaption_romanian.txt             |    Bin 0 -> 1097950 bytes
- hl2/resource/closecaption_russian.dat              |      3 +
- hl2/resource/closecaption_russian.txt              |    Bin 0 -> 1060466 bytes
- hl2/resource/closecaption_schinese.dat             |      3 +
- hl2/resource/closecaption_schinese.txt             |    Bin 0 -> 939406 bytes
- hl2/resource/closecaption_spanish.dat              |      3 +
- hl2/resource/closecaption_spanish.txt              |    Bin 0 -> 1083330 bytes
- hl2/resource/closecaption_swedish.dat              |      3 +
- hl2/resource/closecaption_swedish.txt              |    Bin 0 -> 1099798 bytes
- hl2/resource/closecaption_tchinese.dat             |      3 +
- hl2/resource/closecaption_tchinese.txt             |    Bin 0 -> 937272 bytes
- hl2/resource/closecaption_thai.dat                 |      3 +
- hl2/resource/closecaption_thai.txt                 |    Bin 0 -> 1059628 bytes
- hl2/resource/closecaption_turkish.dat              |      3 +
- hl2/resource/closecaption_turkish.txt              |    Bin 0 -> 1098006 bytes
- hl2/resource/closecaption_ukrainian.txt            |    Bin 0 -> 1089408 bytes
- hl2/resource/colorpicker.cur                       |      3 +
- hl2/resource/crosshair.cur                         |      3 +
- hl2/resource/dmecontrols_english.txt               |    Bin 0 -> 4428 bytes
- hl2/resource/drag_copy.cur                         |      3 +
- hl2/resource/drag_link.cur                         |      3 +
- hl2/resource/drag_move.cur                         |      3 +
- hl2/resource/entity.cur                            |      3 +
- hl2/resource/eyedropper.cur                        |      3 +
- hl2/resource/game-icon.bmp                         |      3 +
- hl2/resource/game.icns                             |      3 +
- hl2/resource/game.ico                              |      3 +
- hl2/resource/game_1bpp.ico                         |      3 +
- hl2/resource/gameui_brazilian.txt                  |    Bin 0 -> 202968 bytes
- hl2/resource/gameui_bulgarian.txt                  |    Bin 0 -> 203182 bytes
- hl2/resource/gameui_czech.txt                      |    Bin 0 -> 199204 bytes
- hl2/resource/gameui_danish.txt                     |    Bin 0 -> 198876 bytes
- hl2/resource/gameui_dutch.txt                      |    Bin 0 -> 202748 bytes
- hl2/resource/gameui_english.txt                    |    Bin 0 -> 92906 bytes
- hl2/resource/gameui_finnish.txt                    |    Bin 0 -> 200756 bytes
- hl2/resource/gameui_french.txt                     |    Bin 0 -> 206364 bytes
- hl2/resource/gameui_german.txt                     |    Bin 0 -> 205440 bytes
- hl2/resource/gameui_greek.txt                      |    Bin 0 -> 204184 bytes
- hl2/resource/gameui_hungarian.txt                  |    Bin 0 -> 199102 bytes
- hl2/resource/gameui_italian.txt                    |    Bin 0 -> 205214 bytes
- hl2/resource/gameui_japanese.txt                   |    Bin 0 -> 177194 bytes
- hl2/resource/gameui_korean.txt                     |    Bin 0 -> 174502 bytes
- hl2/resource/gameui_koreana.txt                    |    Bin 0 -> 174502 bytes
- hl2/resource/gameui_latam.txt                      |    Bin 0 -> 204818 bytes
- hl2/resource/gameui_norwegian.txt                  |    Bin 0 -> 198842 bytes
- hl2/resource/gameui_polish.txt                     |    Bin 0 -> 199828 bytes
- hl2/resource/gameui_portuguese.txt                 |    Bin 0 -> 202690 bytes
- hl2/resource/gameui_romanian.txt                   |    Bin 0 -> 203712 bytes
- hl2/resource/gameui_russian.txt                    |    Bin 0 -> 199072 bytes
- hl2/resource/gameui_schinese.txt                   |    Bin 0 -> 170914 bytes
- hl2/resource/gameui_spanish.txt                    |    Bin 0 -> 204902 bytes
- hl2/resource/gameui_swedish.txt                    |    Bin 0 -> 199686 bytes
- hl2/resource/gameui_tchinese.txt                   |    Bin 0 -> 170594 bytes
- hl2/resource/gameui_thai.txt                       |    Bin 0 -> 195834 bytes
- hl2/resource/gameui_turkish.txt                    |    Bin 0 -> 198796 bytes
- hl2/resource/gameui_ukrainian.txt                  |    Bin 0 -> 200748 bytes
- hl2/resource/gameui_vietnamese.txt                 |    Bin 0 -> 129058 bytes
- hl2/resource/halflife2.ttf                         |      3 +
- hl2/resource/hl2_brazilian.txt                     |    Bin 0 -> 31610 bytes
- hl2/resource/hl2_bulgarian.txt                     |    Bin 0 -> 31590 bytes
- hl2/resource/hl2_czech.txt                         |    Bin 0 -> 30900 bytes
- hl2/resource/hl2_danish.txt                        |    Bin 0 -> 30854 bytes
- hl2/resource/hl2_dutch.txt                         |    Bin 0 -> 30984 bytes
- hl2/resource/hl2_english.txt                       |    Bin 0 -> 14686 bytes
- hl2/resource/hl2_finnish.txt                       |    Bin 0 -> 31300 bytes
- hl2/resource/hl2_french.txt                        |    Bin 0 -> 32528 bytes
- hl2/resource/hl2_german.txt                        |    Bin 0 -> 31926 bytes
- hl2/resource/hl2_greek.txt                         |    Bin 0 -> 32210 bytes
- hl2/resource/hl2_hungarian.txt                     |    Bin 0 -> 31564 bytes
- hl2/resource/hl2_italian.txt                       |    Bin 0 -> 32140 bytes
- hl2/resource/hl2_japanese.txt                      |    Bin 0 -> 27908 bytes
- hl2/resource/hl2_korean.txt                        |    Bin 0 -> 27660 bytes
- hl2/resource/hl2_koreana.txt                       |    Bin 0 -> 27660 bytes
- hl2/resource/hl2_latam.txt                         |    Bin 0 -> 31676 bytes
- hl2/resource/hl2_norwegian.txt                     |    Bin 0 -> 30886 bytes
- hl2/resource/hl2_polish.txt                        |    Bin 0 -> 31412 bytes
- hl2/resource/hl2_portuguese.txt                    |    Bin 0 -> 31548 bytes
- hl2/resource/hl2_romanian.txt                      |    Bin 0 -> 31670 bytes
- hl2/resource/hl2_russian.txt                       |    Bin 0 -> 31004 bytes
- hl2/resource/hl2_schinese.txt                      |    Bin 0 -> 26902 bytes
- hl2/resource/hl2_spanish.txt                       |    Bin 0 -> 31680 bytes
- hl2/resource/hl2_swedish.txt                       |    Bin 0 -> 30760 bytes
- hl2/resource/hl2_tchinese.txt                      |    Bin 0 -> 26876 bytes
- hl2/resource/hl2_thai.txt                          |    Bin 0 -> 30552 bytes
- hl2/resource/hl2_turkish.txt                       |    Bin 0 -> 31130 bytes
- hl2/resource/hl2_ukrainian.txt                     |    Bin 0 -> 31222 bytes
- hl2/resource/hl2crosshairs.ttf                     |      3 +
- hl2/resource/hl2ep2.ttf                            |      3 +
- hl2/resource/ifm_cliproll.cur                      |      3 +
- hl2/resource/ifm_cliprsr.cur                       |      3 +
- hl2/resource/ifm_clipscale.cur                     |      3 +
- hl2/resource/ifm_curve.cur                         |      3 +
- hl2/resource/ifm_dragin.cur                        |      3 +
- hl2/resource/ifm_dragin_roll.cur                   |      3 +
- hl2/resource/ifm_dragin_scale.cur                  |      3 +
- hl2/resource/ifm_dragout.cur                       |      3 +
- hl2/resource/ifm_dragout_roll.cur                  |      3 +
- hl2/resource/ifm_dragout_scale.cur                 |      3 +
- hl2/resource/ifm_grab.cur                          |      3 +
- hl2/resource/ifm_inout.cur                         |      3 +
- hl2/resource/ifm_inout_rr.cur                      |      3 +
- hl2/resource/ifm_inout_rs.cur                      |      3 +
- hl2/resource/ifm_inout_scale.cur                   |      3 +
- hl2/resource/ifm_inout_sr.cur                      |      3 +
- hl2/resource/ifm_inout_ss.cur                      |      3 +
- hl2/resource/ifm_move.cur                          |      3 +
- hl2/resource/ifm_multiselect_after.cur             |      3 +
- hl2/resource/ifm_scaler.cur                        |      3 +
- hl2/resource/ifm_select_after.cur                  |      3 +
- hl2/resource/ifm_ts_doubleline.cur                 |      3 +
- hl2/resource/ifm_ts_full_region.cur                |      3 +
- hl2/resource/ifm_ts_line.cur                       |      3 +
- hl2/resource/ifm_ts_region.cur                     |      3 +
- hl2/resource/itemtest_english.txt                  |    Bin 0 -> 31266 bytes
- hl2/resource/jumptotime.cur                        |      3 +
- hl2/resource/magnify.cur                           |      3 +
- hl2/resource/marlett.ttf                           |      3 +
- hl2/resource/mp3player_english.txt                 |    Bin 0 -> 1292 bytes
- hl2/resource/mp3settings.txt                       |      9 +
- hl2/resource/newobj.cur                            |      3 +
- hl2/resource/replay_brazilian.txt                  |    Bin 0 -> 95766 bytes
- hl2/resource/replay_bulgarian.txt                  |    Bin 0 -> 96768 bytes
- hl2/resource/replay_czech.txt                      |    Bin 0 -> 93850 bytes
- hl2/resource/replay_danish.txt                     |    Bin 0 -> 94320 bytes
- hl2/resource/replay_dutch.txt                      |    Bin 0 -> 95700 bytes
- hl2/resource/replay_english.txt                    |    Bin 0 -> 47254 bytes
- hl2/resource/replay_finnish.txt                    |    Bin 0 -> 94630 bytes
- hl2/resource/replay_french.txt                     |    Bin 0 -> 98324 bytes
- hl2/resource/replay_german.txt                     |    Bin 0 -> 97598 bytes
- hl2/resource/replay_greek.txt                      |    Bin 0 -> 96720 bytes
- hl2/resource/replay_hungarian.txt                  |    Bin 0 -> 95496 bytes
- hl2/resource/replay_italian.txt                    |    Bin 0 -> 97440 bytes
- hl2/resource/replay_japanese.txt                   |    Bin 0 -> 83554 bytes
- hl2/resource/replay_korean.txt                     |    Bin 0 -> 78370 bytes
- hl2/resource/replay_koreana.txt                    |    Bin 0 -> 78370 bytes
- hl2/resource/replay_latam.txt                      |    Bin 0 -> 97134 bytes
- hl2/resource/replay_norwegian.txt                  |    Bin 0 -> 93220 bytes
- hl2/resource/replay_polish.txt                     |    Bin 0 -> 95608 bytes
- hl2/resource/replay_portuguese.txt                 |    Bin 0 -> 97044 bytes
- hl2/resource/replay_romanian.txt                   |    Bin 0 -> 95486 bytes
- hl2/resource/replay_russian.txt                    |    Bin 0 -> 95082 bytes
- hl2/resource/replay_schinese.txt                   |    Bin 0 -> 78820 bytes
- hl2/resource/replay_spanish.txt                    |    Bin 0 -> 97140 bytes
- hl2/resource/replay_swedish.txt                    |    Bin 0 -> 94592 bytes
- hl2/resource/replay_tchinese.txt                   |    Bin 0 -> 78986 bytes
- hl2/resource/replay_thai.txt                       |    Bin 0 -> 92138 bytes
- hl2/resource/replay_turkish.txt                    |    Bin 0 -> 93384 bytes
- hl2/resource/replay_ukrainian.txt                  |    Bin 0 -> 94736 bytes
- hl2/resource/rotate.cur                            |      3 +
- hl2/resource/smartclick.cur                        |      3 +
- hl2/resource/toolactbusy_english.txt               |    Bin 0 -> 618 bytes
- hl2/resource/toolcommedit_english.txt              |    Bin 0 -> 1278 bytes
- hl2/resource/toolfoundry_english.txt               |    Bin 0 -> 1008 bytes
- hl2/resource/toolpet_english.txt                   |    Bin 0 -> 1518 bytes
- hl2/resource/toolshared_english.txt                |    Bin 0 -> 1722 bytes
- hl2/resource/toolvcdblock_english.txt              |    Bin 0 -> 1434 bytes
- hl2/resource/toolvmt_english.txt                   |    Bin 0 -> 630 bytes
- hl2/resource/valve_brazilian.txt                   |    Bin 0 -> 101574 bytes
- hl2/resource/valve_bulgarian.txt                   |    Bin 0 -> 103244 bytes
- hl2/resource/valve_czech.txt                       |    Bin 0 -> 100872 bytes
- hl2/resource/valve_danish.txt                      |    Bin 0 -> 100622 bytes
- hl2/resource/valve_dutch.txt                       |    Bin 0 -> 102800 bytes
- hl2/resource/valve_english.txt                     |    Bin 0 -> 50166 bytes
- hl2/resource/valve_finnish.txt                     |    Bin 0 -> 101052 bytes
- hl2/resource/valve_french.txt                      |    Bin 0 -> 103580 bytes
- hl2/resource/valve_german.txt                      |    Bin 0 -> 103570 bytes
- hl2/resource/valve_greek.txt                       |    Bin 0 -> 103162 bytes
- hl2/resource/valve_hungarian.txt                   |    Bin 0 -> 101112 bytes
- hl2/resource/valve_italian.txt                     |    Bin 0 -> 103586 bytes
- hl2/resource/valve_japanese.txt                    |    Bin 0 -> 90426 bytes
- hl2/resource/valve_korean.txt                      |    Bin 0 -> 89888 bytes
- hl2/resource/valve_koreana.txt                     |    Bin 0 -> 89888 bytes
- hl2/resource/valve_latam.txt                       |    Bin 0 -> 103378 bytes
- hl2/resource/valve_norwegian.txt                   |    Bin 0 -> 100838 bytes
- hl2/resource/valve_polish.txt                      |    Bin 0 -> 101128 bytes
- hl2/resource/valve_portuguese.txt                  |    Bin 0 -> 102022 bytes
- hl2/resource/valve_romanian.txt                    |    Bin 0 -> 98606 bytes
- hl2/resource/valve_russian.txt                     |    Bin 0 -> 101000 bytes
- hl2/resource/valve_schinese.txt                    |    Bin 0 -> 86716 bytes
- hl2/resource/valve_spanish.txt                     |    Bin 0 -> 103292 bytes
- hl2/resource/valve_swedish.txt                     |    Bin 0 -> 100566 bytes
- hl2/resource/valve_tchinese.txt                    |    Bin 0 -> 87124 bytes
- hl2/resource/valve_thai.txt                        |    Bin 0 -> 98840 bytes
- hl2/resource/valve_turkish.txt                     |    Bin 0 -> 100472 bytes
- hl2/resource/valve_ukrainian.txt                   |    Bin 0 -> 101100 bytes
- hl2/resource/valve_vietnamese.txt                  |    Bin 0 -> 97182 bytes
- hl2/resource/youtube_brazilian.txt                 |    Bin 0 -> 13294 bytes
- hl2/resource/youtube_bulgarian.txt                 |    Bin 0 -> 13316 bytes
- hl2/resource/youtube_czech.txt                     |    Bin 0 -> 13052 bytes
- hl2/resource/youtube_danish.txt                    |    Bin 0 -> 13222 bytes
- hl2/resource/youtube_dutch.txt                     |    Bin 0 -> 13342 bytes
- hl2/resource/youtube_english.txt                   |    Bin 0 -> 6456 bytes
- hl2/resource/youtube_finnish.txt                   |    Bin 0 -> 13144 bytes
- hl2/resource/youtube_french.txt                    |    Bin 0 -> 13340 bytes
- hl2/resource/youtube_german.txt                    |    Bin 0 -> 13654 bytes
- hl2/resource/youtube_greek.txt                     |    Bin 0 -> 13710 bytes
- hl2/resource/youtube_hungarian.txt                 |    Bin 0 -> 13282 bytes
- hl2/resource/youtube_italian.txt                   |    Bin 0 -> 13450 bytes
- hl2/resource/youtube_japanese.txt                  |    Bin 0 -> 11660 bytes
- hl2/resource/youtube_korean.txt                    |    Bin 0 -> 11414 bytes
- hl2/resource/youtube_koreana.txt                   |    Bin 0 -> 11414 bytes
- hl2/resource/youtube_latam.txt                     |    Bin 0 -> 13512 bytes
- hl2/resource/youtube_norwegian.txt                 |    Bin 0 -> 13186 bytes
- hl2/resource/youtube_polish.txt                    |    Bin 0 -> 13282 bytes
- hl2/resource/youtube_portuguese.txt                |    Bin 0 -> 13604 bytes
- hl2/resource/youtube_romanian.txt                  |    Bin 0 -> 13328 bytes
- hl2/resource/youtube_russian.txt                   |    Bin 0 -> 13284 bytes
- hl2/resource/youtube_schinese.txt                  |    Bin 0 -> 10786 bytes
- hl2/resource/youtube_spanish.txt                   |    Bin 0 -> 13520 bytes
- hl2/resource/youtube_swedish.txt                   |    Bin 0 -> 13330 bytes
- hl2/resource/youtube_tchinese.txt                  |    Bin 0 -> 10814 bytes
- hl2/resource/youtube_thai.txt                      |    Bin 0 -> 13024 bytes
- hl2/resource/youtube_turkish.txt                   |    Bin 0 -> 13008 bytes
- hl2/resource/youtube_ukrainian.txt                 |    Bin 0 -> 13126 bytes
- platform/admin/admin_brazilian.txt                 |    Bin 0 -> 42008 bytes
- platform/admin/admin_bulgarian.txt                 |    Bin 0 -> 42440 bytes
- platform/admin/admin_czech.txt                     |    Bin 0 -> 41150 bytes
- platform/admin/admin_danish.txt                    |    Bin 0 -> 41744 bytes
- platform/admin/admin_dutch.txt                     |    Bin 0 -> 41954 bytes
- platform/admin/admin_english.txt                   |    Bin 0 -> 19372 bytes
- platform/admin/admin_finnish.txt                   |    Bin 0 -> 41552 bytes
- platform/admin/admin_french.txt                    |    Bin 0 -> 42914 bytes
- platform/admin/admin_german.txt                    |    Bin 0 -> 42036 bytes
- platform/admin/admin_greek.txt                     |    Bin 0 -> 42622 bytes
- platform/admin/admin_hungarian.txt                 |    Bin 0 -> 41364 bytes
- platform/admin/admin_italian.txt                   |    Bin 0 -> 42136 bytes
- platform/admin/admin_japanese.txt                  |    Bin 0 -> 37486 bytes
- platform/admin/admin_korean.txt                    |    Bin 0 -> 37768 bytes
- platform/admin/admin_koreana.txt                   |    Bin 0 -> 37768 bytes
- platform/admin/admin_norwegian.txt                 |    Bin 0 -> 41720 bytes
- platform/admin/admin_polish.txt                    |    Bin 0 -> 40928 bytes
- platform/admin/admin_portuguese.txt                |    Bin 0 -> 42490 bytes
- platform/admin/admin_romanian.txt                  |    Bin 0 -> 42202 bytes
- platform/admin/admin_russian.txt                   |    Bin 0 -> 42236 bytes
- platform/admin/admin_schinese.txt                  |    Bin 0 -> 36702 bytes
- platform/admin/admin_spanish.txt                   |    Bin 0 -> 43204 bytes
- platform/admin/admin_swedish.txt                   |    Bin 0 -> 41788 bytes
- platform/admin/admin_tchinese.txt                  |    Bin 0 -> 36900 bytes
- platform/admin/admin_thai.txt                      |    Bin 0 -> 41094 bytes
- platform/admin/admin_turkish.txt                   |    Bin 0 -> 40844 bytes
- platform/admin/game_ready.wav                      |      3 +
- platform/admin/helpfile.vdf                        |    219 +
- platform/admin/helpfile_adminmod.vdf               |     20 +
- platform/admin/helpfile_cstrike.vdf                |    147 +
- platform/admin/hlds_logo.tga                       |      3 +
- platform/admin/mainserverconfig.vdf                |     53 +
- platform/admin/server_brazilian.txt                |    Bin 0 -> 6394 bytes
- platform/admin/server_bulgarian.txt                |    Bin 0 -> 6470 bytes
- platform/admin/server_czech.txt                    |    Bin 0 -> 6296 bytes
- platform/admin/server_danish.txt                   |    Bin 0 -> 6244 bytes
- platform/admin/server_dutch.txt                    |    Bin 0 -> 6420 bytes
- platform/admin/server_english.txt                  |    Bin 0 -> 3110 bytes
- platform/admin/server_finnish.txt                  |    Bin 0 -> 6416 bytes
- platform/admin/server_french.txt                   |    Bin 0 -> 6450 bytes
- platform/admin/server_german.txt                   |    Bin 0 -> 6462 bytes
- platform/admin/server_greek.txt                    |    Bin 0 -> 6544 bytes
- platform/admin/server_hungarian.txt                |    Bin 0 -> 6300 bytes
- platform/admin/server_italian.txt                  |    Bin 0 -> 6392 bytes
- platform/admin/server_japanese.txt                 |    Bin 0 -> 5650 bytes
- platform/admin/server_korean.txt                   |    Bin 0 -> 5642 bytes
- platform/admin/server_koreana.txt                  |    Bin 0 -> 5642 bytes
- platform/admin/server_norwegian.txt                |    Bin 0 -> 6226 bytes
- platform/admin/server_polish.txt                   |    Bin 0 -> 6282 bytes
- platform/admin/server_portuguese.txt               |    Bin 0 -> 6432 bytes
- platform/admin/server_romanian.txt                 |    Bin 0 -> 6396 bytes
- platform/admin/server_russian.txt                  |    Bin 0 -> 6402 bytes
- platform/admin/server_schinese.txt                 |    Bin 0 -> 5452 bytes
- platform/admin/server_spanish.txt                  |    Bin 0 -> 6478 bytes
- platform/admin/server_swedish.txt                  |    Bin 0 -> 6278 bytes
- platform/admin/server_tchinese.txt                 |    Bin 0 -> 5504 bytes
- platform/admin/server_thai.txt                     |    Bin 0 -> 6316 bytes
- platform/admin/server_turkish.txt                  |    Bin 0 -> 6258 bytes
- platform/platform_misc_000.vpk                     |      3 +
- platform/platform_misc_dir.vpk                     |      3 +
- platform/resource/icon_blank.tga                   |      3 +
- platform/resource/icon_file.tga                    |      3 +
- platform/resource/icon_folder.tga                  |      3 +
- platform/resource/icon_folder_selected.tga         |      3 +
- platform/resource/icon_folderup.tga                |      3 +
- platform/resource/icon_hlicon1.tga                 |      3 +
- platform/resource/icon_hlicon2.tga                 |      3 +
- platform/resource/icon_password.tga                |      3 +
- platform/resource/icon_replay.tga                  |      3 +
- platform/resource/icon_steam.tga                   |      3 +
- platform/resource/icon_steam_disabled.tga          |      3 +
- platform/resource/platform_brazilian.txt           |    Bin 0 -> 1558 bytes
- platform/resource/platform_bulgarian.txt           |    Bin 0 -> 1548 bytes
- platform/resource/platform_czech.txt               |    Bin 0 -> 1532 bytes
- platform/resource/platform_danish.txt              |    Bin 0 -> 1516 bytes
- platform/resource/platform_dutch.txt               |    Bin 0 -> 1556 bytes
- platform/resource/platform_english.txt             |    Bin 0 -> 718 bytes
- platform/resource/platform_finnish.txt             |    Bin 0 -> 1540 bytes
- platform/resource/platform_french.txt              |    Bin 0 -> 1548 bytes
- platform/resource/platform_german.txt              |    Bin 0 -> 1554 bytes
- platform/resource/platform_greek.txt               |    Bin 0 -> 1574 bytes
- platform/resource/platform_hungarian.txt           |    Bin 0 -> 1542 bytes
- platform/resource/platform_italian.txt             |    Bin 0 -> 1528 bytes
- platform/resource/platform_japanese.txt            |    Bin 0 -> 1424 bytes
- platform/resource/platform_korean.txt              |    Bin 0 -> 1398 bytes
- platform/resource/platform_koreana.txt             |    Bin 0 -> 1398 bytes
- platform/resource/platform_norwegian.txt           |    Bin 0 -> 1534 bytes
- platform/resource/platform_polish.txt              |    Bin 0 -> 1524 bytes
- platform/resource/platform_portuguese.txt          |    Bin 0 -> 1554 bytes
- platform/resource/platform_romanian.txt            |    Bin 0 -> 1522 bytes
- platform/resource/platform_russian.txt             |    Bin 0 -> 1516 bytes
- platform/resource/platform_schinese.txt            |    Bin 0 -> 1388 bytes
- platform/resource/platform_spanish.txt             |    Bin 0 -> 1558 bytes
- platform/resource/platform_swedish.txt             |    Bin 0 -> 1540 bytes
- platform/resource/platform_tchinese.txt            |    Bin 0 -> 1394 bytes
- platform/resource/platform_thai.txt                |    Bin 0 -> 1526 bytes
- platform/resource/platform_turkish.txt             |    Bin 0 -> 1548 bytes
- platform/resource/valve_logo.tga                   |      3 +
- platform/resource/vgui_brazilian.txt               |    Bin 0 -> 42824 bytes
- platform/resource/vgui_bulgarian.txt               |    Bin 0 -> 43134 bytes
- platform/resource/vgui_czech.txt                   |    Bin 0 -> 42258 bytes
- platform/resource/vgui_danish.txt                  |    Bin 0 -> 42258 bytes
- platform/resource/vgui_dutch.txt                   |    Bin 0 -> 42522 bytes
- platform/resource/vgui_english.txt                 |    Bin 0 -> 19510 bytes
- platform/resource/vgui_finnish.txt                 |    Bin 0 -> 42202 bytes
- platform/resource/vgui_french.txt                  |    Bin 0 -> 43412 bytes
- platform/resource/vgui_german.txt                  |    Bin 0 -> 42606 bytes
- platform/resource/vgui_greek.txt                   |    Bin 0 -> 43014 bytes
- platform/resource/vgui_hungarian.txt               |    Bin 0 -> 42410 bytes
- platform/resource/vgui_italian.txt                 |    Bin 0 -> 42814 bytes
- platform/resource/vgui_japanese.txt                |    Bin 0 -> 31674 bytes
- platform/resource/vgui_korean.txt                  |    Bin 0 -> 38276 bytes
- platform/resource/vgui_koreana.txt                 |    Bin 0 -> 38276 bytes
- platform/resource/vgui_norwegian.txt               |    Bin 0 -> 42516 bytes
- platform/resource/vgui_polish.txt                  |    Bin 0 -> 42062 bytes
- platform/resource/vgui_portuguese.txt              |    Bin 0 -> 42754 bytes
- platform/resource/vgui_romanian.txt                |    Bin 0 -> 41882 bytes
- platform/resource/vgui_russian.txt                 |    Bin 0 -> 42450 bytes
- platform/resource/vgui_schinese.txt                |    Bin 0 -> 37342 bytes
- platform/resource/vgui_spanish.txt                 |    Bin 0 -> 43070 bytes
- platform/resource/vgui_swedish.txt                 |    Bin 0 -> 41996 bytes
- platform/resource/vgui_tchinese.txt                |    Bin 0 -> 37418 bytes
- platform/resource/vgui_thai.txt                    |    Bin 0 -> 27436 bytes
- platform/resource/vgui_turkish.txt                 |    Bin 0 -> 41640 bytes
- platform/resource/warning.wav                      |      3 +
- platform/servers/serverbrowser_brazilian.txt       |    Bin 0 -> 57572 bytes
- platform/servers/serverbrowser_bulgarian.txt       |    Bin 0 -> 58424 bytes
- platform/servers/serverbrowser_czech.txt           |    Bin 0 -> 58660 bytes
- platform/servers/serverbrowser_danish.txt          |    Bin 0 -> 57062 bytes
- platform/servers/serverbrowser_dutch.txt           |    Bin 0 -> 58634 bytes
- platform/servers/serverbrowser_english.txt         |    Bin 0 -> 27402 bytes
- platform/servers/serverbrowser_finnish.txt         |    Bin 0 -> 57028 bytes
- platform/servers/serverbrowser_french.txt          |    Bin 0 -> 59538 bytes
- platform/servers/serverbrowser_german.txt          |    Bin 0 -> 59456 bytes
- platform/servers/serverbrowser_greek.txt           |    Bin 0 -> 59322 bytes
- platform/servers/serverbrowser_hungarian.txt       |    Bin 0 -> 57976 bytes
- platform/servers/serverbrowser_italian.txt         |    Bin 0 -> 59718 bytes
- platform/servers/serverbrowser_japanese.txt        |    Bin 0 -> 51676 bytes
- platform/servers/serverbrowser_korean.txt          |    Bin 0 -> 51978 bytes
- platform/servers/serverbrowser_koreana.txt         |    Bin 0 -> 51978 bytes
- platform/servers/serverbrowser_norwegian.txt       |    Bin 0 -> 56454 bytes
- platform/servers/serverbrowser_polish.txt          |    Bin 0 -> 58104 bytes
- platform/servers/serverbrowser_portuguese.txt      |    Bin 0 -> 57530 bytes
- platform/servers/serverbrowser_romanian.txt        |    Bin 0 -> 58668 bytes
- platform/servers/serverbrowser_russian.txt         |    Bin 0 -> 56064 bytes
- platform/servers/serverbrowser_schinese.txt        |    Bin 0 -> 48728 bytes
- platform/servers/serverbrowser_spanish.txt         |    Bin 0 -> 60202 bytes
- platform/servers/serverbrowser_swedish.txt         |    Bin 0 -> 56888 bytes
- platform/servers/serverbrowser_tchinese.txt        |    Bin 0 -> 48866 bytes
- platform/servers/serverbrowser_thai.txt            |    Bin 0 -> 57938 bytes
- platform/servers/serverbrowser_turkish.txt         |    Bin 0 -> 57308 bytes
- platform/vgui/hud/800corner.tga                    |      3 +
- platform/vgui/hud/800corner1.tga                   |      3 +
- platform/vgui/hud/800corner2.tga                   |      3 +
- platform/vgui/hud/800corner3.tga                   |      3 +
- platform/vgui/hud/800corner4.tga                   |      3 +
- platform/vgui/resource/icon_newfolder.tga          |      3 +
- platform/vgui/resource/icon_steam.tga              |      3 +
- platform/vgui/resource/icon_steam_disabled.tga     |      3 +
- steamapps/appmanifest_228980.acf                   |     28 +
- steamapps/appmanifest_440.acf                      |     46 +
- steamapps/libraryfolders.vdf                       |      5 +
- tf/bin/client.dll                                  |      3 +
- tf/bin/server.dll                                  |      3 +
- tf/cfg/360controller-linux.cfg                     |     15 +
- tf/cfg/360controller.cfg                           |     54 +
- tf/cfg/chapter1.cfg                                |      2 +
- tf/cfg/chapter2.cfg                                |      2 +
- tf/cfg/chapter3.cfg                                |      2 +
- tf/cfg/config_default.cfg                          |     75 +
- tf/cfg/mapcycle_beta_asteroid.txt                  |      1 +
- tf/cfg/mapcycle_beta_cactus_canyon.txt             |      1 +
- tf/cfg/mapcycle_beta_mannpower.txt                 |      3 +
- tf/cfg/mapcycle_default.txt                        |     56 +
- tf/cfg/mapcycle_doomsday_event_247.txt             |      1 +
- tf/cfg/mapcycle_featured_maps.txt                  |      4 +
- tf/cfg/mapcycle_halloween.txt                      |     10 +
- tf/cfg/mapcycle_halloween_event_247.txt            |      4 +
- tf/cfg/mapcycle_hightower_event_247.txt            |      1 +
- tf/cfg/mapcycle_invasion_maps.txt                  |      5 +
- tf/cfg/mapcycle_ladder.txt                         |     10 +
- tf/cfg/mapcycle_lakeside_event_247.txt             |      1 +
- tf/cfg/mapcycle_mannpower.txt                      |      3 +
- tf/cfg/mapcycle_quickplay_arena.txt                |     10 +
- tf/cfg/mapcycle_quickplay_attackdefense.txt        |      8 +
- tf/cfg/mapcycle_quickplay_cp.txt                   |     17 +
- tf/cfg/mapcycle_quickplay_ctf.txt                  |      7 +
- tf/cfg/mapcycle_quickplay_koth.txt                 |     10 +
- tf/cfg/mapcycle_quickplay_misc.txt                 |      4 +
- tf/cfg/mapcycle_quickplay_passtime.txt             |      3 +
- tf/cfg/mapcycle_quickplay_payload.txt              |     10 +
- tf/cfg/mapcycle_quickplay_payloadrace.txt          |      3 +
- tf/cfg/motd_default.txt                            |     51 +
- tf/cfg/motd_text_default.txt                       |     51 +
- tf/cfg/mtp.cfg                                     |     14 +
- tf/cfg/pure_server_full.txt                        |     24 +
- tf/cfg/pure_server_minimal.txt                     |     32 +
- tf/cfg/pure_server_whitelist_example.txt           |     62 +
- tf/cfg/replay_example.cfg                          |     79 +
- tf/cfg/server_247_mannpower.cfg                    |      8 +
- tf/cfg/server_247_rounds.cfg                       |      6 +
- tf/cfg/server_bootcamp.cfg                         |      7 +
- tf/cfg/server_casual.cfg                           |     18 +
- tf/cfg/server_casual_max_rounds_win_conditions.cfg |      5 +
- ..._casual_max_rounds_win_conditions_mannpower.cfg |      8 +
- tf/cfg/server_casual_rounds_win_conditions.cfg     |      5 +
- tf/cfg/server_casual_stopwatch_win_conditions.cfg  |      6 +
- tf/cfg/server_competitive.cfg                      |     18 +
- ...erver_competitive_max_rounds_win_conditions.cfg |      5 +
- ...titive_max_rounds_win_conditions_high_skill.cfg |      5 +
- .../server_competitive_rounds_win_conditions.cfg   |      6 +
- ...ompetitive_rounds_win_conditions_high_skill.cfg |      6 +
- ...server_competitive_stopwatch_win_conditions.cfg |      6 +
- ...etitive_stopwatch_win_conditions_high_skill.cfg |      6 +
- tf/cfg/server_limited_rounds.cfg                   |      7 +
- tf/cfg/server_limited_time.cfg                     |      6 +
- tf/cfg/server_mannup.cfg                           |      7 +
- tf/cfg/server_matchmaking_base.cfg                 |     45 +
- tf/cfg/server_mvm.cfg                              |      9 +
- tf/cfg/sfm_defaultanimationgroups.txt              |    133 +
- tf/cfg/sourcevr_tf.cfg                             |     10 +
- tf/cfg/trusted_keys_base.txt                       |     20 +
- tf/cfg/trusted_keys_example.txt                    |     39 +
- tf/cfg/undo360controller.cfg                       |      8 +
- tf/custom/readme.txt                               |     33 +
- tf/custom/workshop/readme.txt                      |      1 +
- tf/download/readme.txt                             |      7 +
- tf/gameinfo.txt                                    |    102 +
- tf/item_whitelist_example.txt                      |     73 +
- tf/maps/arena_badlands.bsp                         |      3 +
- tf/maps/arena_byre.bsp                             |      3 +
- tf/maps/arena_granary.bsp                          |      3 +
- tf/maps/arena_lumberyard.bsp                       |      3 +
- tf/maps/arena_nucleus.bsp                          |      3 +
- tf/maps/arena_offblast_final.bsp                   |      3 +
- tf/maps/arena_ravine.bsp                           |      3 +
- tf/maps/arena_sawmill.bsp                          |      3 +
- tf/maps/arena_watchtower.bsp                       |      3 +
- tf/maps/arena_well.bsp                             |      3 +
- tf/maps/background01.bsp                           |      3 +
- tf/maps/cp_5gorge.bsp                              |      3 +
- tf/maps/cp_badlands.bsp                            |      3 +
- tf/maps/cp_cloak.bsp                               |      3 +
- tf/maps/cp_coldfront.bsp                           |      3 +
- tf/maps/cp_degrootkeep.bsp                         |      3 +
- tf/maps/cp_dustbowl.bsp                            |      3 +
- tf/maps/cp_egypt_final.bsp                         |      3 +
- tf/maps/cp_fastlane.bsp                            |      3 +
- tf/maps/cp_foundry.bsp                             |      3 +
- tf/maps/cp_freight_final1.bsp                      |      3 +
- tf/maps/cp_gorge.bsp                               |      3 +
- tf/maps/cp_gorge_event.bsp                         |      3 +
- tf/maps/cp_granary.bsp                             |      3 +
- tf/maps/cp_gravelpit.bsp                           |      3 +
- tf/maps/cp_gullywash_final1.bsp                    |      3 +
- tf/maps/cp_junction_final.bsp                      |      3 +
- tf/maps/cp_manor_event.bsp                         |      3 +
- tf/maps/cp_mercenarypark.bsp                       |      3 +
- tf/maps/cp_metalworks.bsp                          |      3 +
- tf/maps/cp_mossrock.bsp                            |      3 +
- tf/maps/cp_mountainlab.bsp                         |      3 +
- tf/maps/cp_powerhouse.bsp                          |      3 +
- tf/maps/cp_process_final.bsp                       |      3 +
- tf/maps/cp_snakewater_final1.bsp                   |      3 +
- tf/maps/cp_snowplow.bsp                            |      3 +
- tf/maps/cp_standin_final.bsp                       |      3 +
- tf/maps/cp_steel.bsp                               |      3 +
- tf/maps/cp_sunshine.bsp                            |      3 +
- tf/maps/cp_sunshine_event.bsp                      |      3 +
- tf/maps/cp_vanguard.bsp                            |      3 +
- tf/maps/cp_well.bsp                                |      3 +
- tf/maps/cp_yukon_final.bsp                         |      3 +
- tf/maps/ctf_2fort.bsp                              |      3 +
- tf/maps/ctf_2fort_invasion.bsp                     |      3 +
- tf/maps/ctf_doublecross.bsp                        |      3 +
- tf/maps/ctf_foundry.bsp                            |      3 +
- tf/maps/ctf_gorge.bsp                              |      3 +
- tf/maps/ctf_hellfire.bsp                           |      3 +
- tf/maps/ctf_landfall.bsp                           |      3 +
- tf/maps/ctf_sawmill.bsp                            |      3 +
- tf/maps/ctf_thundermountain.bsp                    |      3 +
- tf/maps/ctf_turbine.bsp                            |      3 +
- tf/maps/ctf_well.bsp                               |      3 +
- tf/maps/itemtest.bsp                               |      3 +
- tf/maps/koth_badlands.bsp                          |      3 +
- tf/maps/koth_bagel_event.bsp                       |      3 +
- tf/maps/koth_brazil.bsp                            |      3 +
- tf/maps/koth_harvest_event.bsp                     |      3 +
- tf/maps/koth_harvest_final.bsp                     |      3 +
- tf/maps/koth_highpass.bsp                          |      3 +
- tf/maps/koth_king.bsp                              |      3 +
- tf/maps/koth_lakeside_event.bsp                    |      3 +
- tf/maps/koth_lakeside_final.bsp                    |      3 +
- tf/maps/koth_lazarus.bsp                           |      3 +
- tf/maps/koth_maple_ridge_event.bsp                 |      3 +
- tf/maps/koth_moonshine_event.bsp                   |      3 +
- tf/maps/koth_nucleus.bsp                           |      3 +
- tf/maps/koth_probed.bsp                            |      3 +
- tf/maps/koth_sawmill.bsp                           |      3 +
- tf/maps/koth_slasher.bsp                           |      3 +
- tf/maps/koth_slaughter_event.bsp                   |      3 +
- tf/maps/koth_suijin.bsp                            |      3 +
- tf/maps/koth_viaduct.bsp                           |      3 +
- tf/maps/koth_viaduct_event.bsp                     |      3 +
- tf/maps/mvm_bigrock.bsp                            |      3 +
- tf/maps/mvm_coaltown.bsp                           |      3 +
- tf/maps/mvm_decoy.bsp                              |      3 +
- tf/maps/mvm_ghost_town.bsp                         |      3 +
- tf/maps/mvm_mannhattan.bsp                         |      3 +
- tf/maps/mvm_mannworks.bsp                          |      3 +
- tf/maps/mvm_rottenburg.bsp                         |      3 +
- tf/maps/pass_brickyard.bsp                         |      3 +
- tf/maps/pass_district.bsp                          |      3 +
- tf/maps/pass_timbertown.bsp                        |      3 +
- tf/maps/pd_cursed_cove_event.bsp                   |      3 +
- tf/maps/pd_monster_bash.bsp                        |      3 +
- tf/maps/pd_pit_of_death_event.bsp                  |      3 +
- tf/maps/pd_watergate.bsp                           |      3 +
- tf/maps/pl_badwater.bsp                            |      3 +
- tf/maps/pl_barnblitz.bsp                           |      3 +
- tf/maps/pl_borneo.bsp                              |      3 +
- tf/maps/pl_cactuscanyon.bsp                        |      3 +
- tf/maps/pl_enclosure_final.bsp                     |      3 +
- tf/maps/pl_fifthcurve_event.bsp                    |      3 +
- tf/maps/pl_frontier_final.bsp                      |      3 +
- tf/maps/pl_goldrush.bsp                            |      3 +
- tf/maps/pl_hoodoo_final.bsp                        |      3 +
- tf/maps/pl_millstone_event.bsp                     |      3 +
- tf/maps/pl_precipice_event_final.bsp               |      3 +
- tf/maps/pl_rumble_event.bsp                        |      3 +
- tf/maps/pl_snowycoast.bsp                          |      3 +
- tf/maps/pl_swiftwater_final1.bsp                   |      3 +
- tf/maps/pl_thundermountain.bsp                     |      3 +
- tf/maps/pl_upward.bsp                              |      3 +
- tf/maps/plr_bananabay.bsp                          |      3 +
- tf/maps/plr_hightower.bsp                          |      3 +
- tf/maps/plr_hightower_event.bsp                    |      3 +
- tf/maps/plr_nightfall_final.bsp                    |      3 +
- tf/maps/plr_pipeline.bsp                           |      3 +
- tf/maps/rd_asteroid.bsp                            |      3 +
- tf/maps/sd_doomsday.bsp                            |      3 +
- tf/maps/sd_doomsday_event.bsp                      |      3 +
- tf/maps/tc_hydro.bsp                               |      3 +
- tf/maps/tr_dustbowl.bsp                            |      3 +
- tf/maps/tr_target.bsp                              |      3 +
- .../models/player/items/templates/standard.vmt     |    111 +
- tf/media/arena_intro.bik                           |      3 +
- tf/media/cp_badlands.bik                           |      3 +
- tf/media/cp_coldfront.bik                          |      3 +
- tf/media/cp_dustbowl.bik                           |      3 +
- tf/media/cp_granary.bik                            |      3 +
- tf/media/cp_gravelpit.bik                          |      3 +
- tf/media/cp_steel.bik                              |      3 +
- tf/media/cp_well.bik                               |      3 +
- tf/media/ctf_2fort.bik                             |      3 +
- tf/media/ctf_well.bik                              |      3 +
- tf/media/cyoa_intro_stage1.bik                     |      3 +
- tf/media/cyoa_intro_stage2.bik                     |      3 +
- tf/media/cyoa_intro_stage3.bik                     |      3 +
- tf/media/mvm_intro.bik                             |      3 +
- tf/media/pl_badwater.bik                           |      3 +
- tf/media/pl_goldrush.bik                           |      3 +
- tf/media/startupvids.txt                           |      1 +
- tf/media/tc_hydro.bik                              |      3 +
- tf/media/tr_dustbowl.bik                           |      3 +
- tf/media/tr_goldrush.bik                           |      3 +
- tf/media/tr_target.bik                             |      3 +
- tf/media/tr_target_demo.bik                        |      3 +
- tf/media/tr_target_engineer.bik                    |      3 +
- tf/media/tr_target_spy.bik                         |      3 +
- tf/resource/closecaption_brazilian.dat             |      3 +
- tf/resource/closecaption_brazilian.txt             |    Bin 0 -> 162588 bytes
- tf/resource/closecaption_bulgarian.dat             |      3 +
- tf/resource/closecaption_bulgarian.txt             |    Bin 0 -> 166528 bytes
- tf/resource/closecaption_czech.dat                 |      3 +
- tf/resource/closecaption_czech.txt                 |    Bin 0 -> 148614 bytes
- tf/resource/closecaption_danish.dat                |      3 +
- tf/resource/closecaption_danish.txt                |    Bin 0 -> 162434 bytes
- tf/resource/closecaption_dutch.dat                 |      3 +
- tf/resource/closecaption_dutch.txt                 |    Bin 0 -> 166568 bytes
- tf/resource/closecaption_english.dat               |      3 +
- tf/resource/closecaption_english.txt               |    Bin 0 -> 77906 bytes
- tf/resource/closecaption_finnish.dat               |      3 +
- tf/resource/closecaption_finnish.txt               |    Bin 0 -> 157580 bytes
- tf/resource/closecaption_french.dat                |      3 +
- tf/resource/closecaption_french.txt                |    Bin 0 -> 167536 bytes
- tf/resource/closecaption_german.dat                |      3 +
- tf/resource/closecaption_german.txt                |    Bin 0 -> 163278 bytes
- tf/resource/closecaption_greek.dat                 |      3 +
- tf/resource/closecaption_greek.txt                 |    Bin 0 -> 167874 bytes
- tf/resource/closecaption_hungarian.dat             |      3 +
- tf/resource/closecaption_hungarian.txt             |    Bin 0 -> 156994 bytes
- tf/resource/closecaption_italian.dat               |      3 +
- tf/resource/closecaption_italian.txt               |    Bin 0 -> 159420 bytes
- tf/resource/closecaption_japanese.dat              |      3 +
- tf/resource/closecaption_japanese.txt              |    Bin 0 -> 117812 bytes
- tf/resource/closecaption_korean.dat                |      3 +
- tf/resource/closecaption_korean.txt                |    Bin 0 -> 120342 bytes
- tf/resource/closecaption_koreana.dat               |      3 +
- tf/resource/closecaption_koreana.txt               |    Bin 0 -> 120342 bytes
- tf/resource/closecaption_norwegian.dat             |      3 +
- tf/resource/closecaption_norwegian.txt             |    Bin 0 -> 155040 bytes
- tf/resource/closecaption_polish.dat                |      3 +
- tf/resource/closecaption_polish.txt                |    Bin 0 -> 163270 bytes
- tf/resource/closecaption_portuguese.dat            |      3 +
- tf/resource/closecaption_portuguese.txt            |    Bin 0 -> 166064 bytes
- tf/resource/closecaption_romanian.dat              |      3 +
- tf/resource/closecaption_romanian.txt              |    Bin 0 -> 163012 bytes
- tf/resource/closecaption_russian.dat               |      3 +
- tf/resource/closecaption_russian.txt               |    Bin 0 -> 148764 bytes
- tf/resource/closecaption_schinese.dat              |      3 +
- tf/resource/closecaption_schinese.txt              |    Bin 0 -> 107268 bytes
- tf/resource/closecaption_spanish.dat               |      3 +
- tf/resource/closecaption_spanish.txt               |    Bin 0 -> 166634 bytes
- tf/resource/closecaption_swedish.dat               |      3 +
- tf/resource/closecaption_swedish.txt               |    Bin 0 -> 152498 bytes
- tf/resource/closecaption_tchinese.dat              |      3 +
- tf/resource/closecaption_tchinese.txt              |    Bin 0 -> 107186 bytes
- tf/resource/closecaption_thai.txt                  |    Bin 0 -> 7688 bytes
- tf/resource/closecaption_turkish.dat               |      3 +
- tf/resource/closecaption_turkish.txt               |    Bin 0 -> 158830 bytes
- tf/resource/closecaption_ukrainian.txt             |    Bin 0 -> 145644 bytes
- tf/resource/game-icon.bmp                          |      3 +
- tf/resource/game.icns                              |      3 +
- tf/resource/game.ico                               |      3 +
- tf/resource/game_1bpp.ico                          |      3 +
- tf/resource/ocra.ttf                               |      3 +
- tf/resource/tf.ttf                                 |      3 +
- tf/resource/tf2.ttf                                |      3 +
- tf/resource/tf2build.ttf                           |      3 +
- tf/resource/tf2professor.ttf                       |      3 +
- tf/resource/tf2secondary.ttf                       |      3 +
- tf/resource/tf_brazilian.txt                       |    Bin 0 -> 5035784 bytes
- tf/resource/tf_bulgarian.txt                       |    Bin 0 -> 5104378 bytes
- tf/resource/tf_czech.txt                           |    Bin 0 -> 4924842 bytes
- tf/resource/tf_danish.txt                          |    Bin 0 -> 4922126 bytes
- tf/resource/tf_dutch.txt                           |    Bin 0 -> 4948466 bytes
- tf/resource/tf_english.txt                         |    Bin 0 -> 2329088 bytes
- tf/resource/tf_finnish.txt                         |    Bin 0 -> 4635384 bytes
- tf/resource/tf_french.txt                          |    Bin 0 -> 5118346 bytes
- tf/resource/tf_german.txt                          |    Bin 0 -> 5005674 bytes
- tf/resource/tf_greek.txt                           |    Bin 0 -> 5100582 bytes
- tf/resource/tf_hungarian.txt                       |    Bin 0 -> 5007918 bytes
- tf/resource/tf_italian.txt                         |    Bin 0 -> 5195902 bytes
- tf/resource/tf_japanese.txt                        |    Bin 0 -> 2055842 bytes
- tf/resource/tf_korean.txt                          |    Bin 0 -> 3743288 bytes
- tf/resource/tf_koreana.txt                         |    Bin 0 -> 3743288 bytes
- tf/resource/tf_norwegian.txt                       |    Bin 0 -> 3088260 bytes
- tf/resource/tf_pirate.txt                          |    Bin 0 -> 2097224 bytes
- tf/resource/tf_polish.txt                          |    Bin 0 -> 5048856 bytes
- tf/resource/tf_portuguese.txt                      |    Bin 0 -> 5208686 bytes
- tf/resource/tf_proto_obj_defs_brazilian.txt        |    Bin 0 -> 258992 bytes
- tf/resource/tf_proto_obj_defs_bulgarian.txt        |    Bin 0 -> 264430 bytes
- tf/resource/tf_proto_obj_defs_czech.txt            |    Bin 0 -> 260226 bytes
- tf/resource/tf_proto_obj_defs_danish.txt           |    Bin 0 -> 258402 bytes
- tf/resource/tf_proto_obj_defs_dutch.txt            |    Bin 0 -> 198226 bytes
- tf/resource/tf_proto_obj_defs_english.txt          |    Bin 0 -> 102962 bytes
- tf/resource/tf_proto_obj_defs_finnish.txt          |    Bin 0 -> 261254 bytes
- tf/resource/tf_proto_obj_defs_french.txt           |    Bin 0 -> 265520 bytes
- tf/resource/tf_proto_obj_defs_german.txt           |    Bin 0 -> 265734 bytes
- tf/resource/tf_proto_obj_defs_greek.txt            |    Bin 0 -> 262982 bytes
- tf/resource/tf_proto_obj_defs_hungarian.txt        |    Bin 0 -> 260724 bytes
- tf/resource/tf_proto_obj_defs_italian.txt          |    Bin 0 -> 265908 bytes
- tf/resource/tf_proto_obj_defs_korean.txt           |    Bin 0 -> 862 bytes
- tf/resource/tf_proto_obj_defs_koreana.txt          |    Bin 0 -> 862 bytes
- tf/resource/tf_proto_obj_defs_norwegian.txt        |    Bin 0 -> 206078 bytes
- tf/resource/tf_proto_obj_defs_polish.txt           |    Bin 0 -> 258008 bytes
- tf/resource/tf_proto_obj_defs_portuguese.txt       |    Bin 0 -> 262760 bytes
- tf/resource/tf_proto_obj_defs_romanian.txt         |    Bin 0 -> 227680 bytes
- tf/resource/tf_proto_obj_defs_russian.txt          |    Bin 0 -> 253760 bytes
- tf/resource/tf_proto_obj_defs_schinese.txt         |    Bin 0 -> 225762 bytes
- tf/resource/tf_proto_obj_defs_spanish.txt          |    Bin 0 -> 261284 bytes
- tf/resource/tf_proto_obj_defs_swedish.txt          |    Bin 0 -> 255266 bytes
- tf/resource/tf_proto_obj_defs_tchinese.txt         |    Bin 0 -> 19272 bytes
- tf/resource/tf_proto_obj_defs_thai.txt             |    Bin 0 -> 255854 bytes
- tf/resource/tf_proto_obj_defs_turkish.txt          |    Bin 0 -> 257994 bytes
- tf/resource/tf_proto_obj_defs_ukrainian.txt        |    Bin 0 -> 258566 bytes
- tf/resource/tf_quests_brazilian.txt                |    Bin 0 -> 179458 bytes
- tf/resource/tf_quests_bulgarian.txt                |    Bin 0 -> 184628 bytes
- tf/resource/tf_quests_czech.txt                    |    Bin 0 -> 179316 bytes
- tf/resource/tf_quests_danish.txt                   |    Bin 0 -> 180222 bytes
- tf/resource/tf_quests_dutch.txt                    |    Bin 0 -> 181246 bytes
- tf/resource/tf_quests_english.txt                  |    Bin 0 -> 85852 bytes
- tf/resource/tf_quests_finnish.txt                  |    Bin 0 -> 182212 bytes
- tf/resource/tf_quests_french.txt                   |    Bin 0 -> 188218 bytes
- tf/resource/tf_quests_german.txt                   |    Bin 0 -> 186166 bytes
- tf/resource/tf_quests_greek.txt                    |    Bin 0 -> 183446 bytes
- tf/resource/tf_quests_hungarian.txt                |    Bin 0 -> 181428 bytes
- tf/resource/tf_quests_italian.txt                  |    Bin 0 -> 186680 bytes
- tf/resource/tf_quests_japanese.txt                 |    Bin 0 -> 2568 bytes
- tf/resource/tf_quests_korean.txt                   |    Bin 0 -> 121194 bytes
- tf/resource/tf_quests_koreana.txt                  |    Bin 0 -> 121194 bytes
- tf/resource/tf_quests_norwegian.txt                |    Bin 0 -> 25510 bytes
- tf/resource/tf_quests_polish.txt                   |    Bin 0 -> 180760 bytes
- tf/resource/tf_quests_portuguese.txt               |    Bin 0 -> 184648 bytes
- tf/resource/tf_quests_romanian.txt                 |    Bin 0 -> 182604 bytes
- tf/resource/tf_quests_russian.txt                  |    Bin 0 -> 175334 bytes
- tf/resource/tf_quests_schinese.txt                 |    Bin 0 -> 147852 bytes
- tf/resource/tf_quests_spanish.txt                  |    Bin 0 -> 184344 bytes
- tf/resource/tf_quests_swedish.txt                  |    Bin 0 -> 178600 bytes
- tf/resource/tf_quests_tchinese.txt                 |    Bin 0 -> 98864 bytes
- tf/resource/tf_quests_thai.txt                     |    Bin 0 -> 178816 bytes
- tf/resource/tf_quests_turkish.txt                  |    Bin 0 -> 180578 bytes
- tf/resource/tf_quests_ukrainian.txt                |    Bin 0 -> 178336 bytes
- tf/resource/tf_romanian.txt                        |    Bin 0 -> 4756200 bytes
- tf/resource/tf_russian.txt                         |    Bin 0 -> 4994140 bytes
- tf/resource/tf_schinese.txt                        |    Bin 0 -> 4103280 bytes
- tf/resource/tf_spanish.txt                         |    Bin 0 -> 5130502 bytes
- tf/resource/tf_swedish.txt                         |    Bin 0 -> 4672338 bytes
- tf/resource/tf_tchinese.txt                        |    Bin 0 -> 3918148 bytes
- tf/resource/tf_thai.txt                            |    Bin 0 -> 4853290 bytes
- tf/resource/tf_turkish.txt                         |    Bin 0 -> 4918844 bytes
- tf/resource/tf_ukrainian.txt                       |    Bin 0 -> 5005842 bytes
- tf/resource/tfd.ttf                                |      3 +
- tf/resource/tflogo.ttf                             |      3 +
- tf/scripts/items/items_game.txt                    | 189003 ++++++++++++++++++
- tf/scripts/items/items_game.txt.sig                |      3 +
- tf/scripts/protodefs/proto_defs.vpd                |      3 +
- tf/scripts/protodefs/proto_defs.vpd.sig            |      3 +
- tf/steam.inf                                       |      6 +
- tf/tf2_misc_000.vpk                                |      3 +
- tf/tf2_misc_001.vpk                                |      3 +
- tf/tf2_misc_002.vpk                                |      3 +
- tf/tf2_misc_003.vpk                                |      3 +
- tf/tf2_misc_004.vpk                                |      3 +
- tf/tf2_misc_005.vpk                                |      3 +
- tf/tf2_misc_006.vpk                                |      3 +
- tf/tf2_misc_007.vpk                                |      3 +
- tf/tf2_misc_008.vpk                                |      3 +
- tf/tf2_misc_009.vpk                                |      3 +
- tf/tf2_misc_010.vpk                                |      3 +
- tf/tf2_misc_011.vpk                                |      3 +
- tf/tf2_misc_012.vpk                                |      3 +
- tf/tf2_misc_013.vpk                                |      3 +
- tf/tf2_misc_014.vpk                                |      3 +
- tf/tf2_misc_015.vpk                                |      3 +
- tf/tf2_misc_016.vpk                                |      3 +
- tf/tf2_misc_017.vpk                                |      3 +
- tf/tf2_misc_018.vpk                                |      3 +
- tf/tf2_misc_019.vpk                                |      3 +
- tf/tf2_misc_020.vpk                                |      3 +
- tf/tf2_misc_dir.vpk                                |      3 +
- tf/tf2_sound_misc.vpk.sound.cache                  |      3 +
- tf/tf2_sound_misc_000.vpk                          |      3 +
- tf/tf2_sound_misc_001.vpk                          |      3 +
- tf/tf2_sound_misc_002.vpk                          |      3 +
- tf/tf2_sound_misc_003.vpk                          |      3 +
- tf/tf2_sound_misc_004.vpk                          |      3 +
- tf/tf2_sound_misc_005.vpk                          |      3 +
- tf/tf2_sound_misc_006.vpk                          |      3 +
- tf/tf2_sound_misc_007.vpk                          |      3 +
- tf/tf2_sound_misc_008.vpk                          |      3 +
- tf/tf2_sound_misc_009.vpk                          |      3 +
- tf/tf2_sound_misc_010.vpk                          |      3 +
- tf/tf2_sound_misc_011.vpk                          |      3 +
- tf/tf2_sound_misc_dir.vpk                          |      3 +
- tf/tf2_sound_vo_english.vpk.sound.cache            |      3 +
- tf/tf2_sound_vo_english_000.vpk                    |      3 +
- tf/tf2_sound_vo_english_001.vpk                    |      3 +
- tf/tf2_sound_vo_english_002.vpk                    |      3 +
- tf/tf2_sound_vo_english_dir.vpk                    |      3 +
- tf/tf2_textures_000.vpk                            |      3 +
- tf/tf2_textures_001.vpk                            |      3 +
- tf/tf2_textures_002.vpk                            |      3 +
- tf/tf2_textures_003.vpk                            |      3 +
- tf/tf2_textures_004.vpk                            |      3 +
- tf/tf2_textures_005.vpk                            |      3 +
- tf/tf2_textures_006.vpk                            |      3 +
- tf/tf2_textures_007.vpk                            |      3 +
- tf/tf2_textures_008.vpk                            |      3 +
- tf/tf2_textures_009.vpk                            |      3 +
- tf/tf2_textures_010.vpk                            |      3 +
- tf/tf2_textures_011.vpk                            |      3 +
- tf/tf2_textures_012.vpk                            |      3 +
- tf/tf2_textures_013.vpk                            |      3 +
- tf/tf2_textures_014.vpk                            |      3 +
- tf/tf2_textures_015.vpk                            |      3 +
- tf/tf2_textures_016.vpk                            |      3 +
- tf/tf2_textures_017.vpk                            |      3 +
- tf/tf2_textures_018.vpk                            |      3 +
- tf/tf2_textures_019.vpk                            |      3 +
- tf/tf2_textures_020.vpk                            |      3 +
- tf/tf2_textures_021.vpk                            |      3 +
- tf/tf2_textures_022.vpk                            |      3 +
- tf/tf2_textures_023.vpk                            |      3 +
- tf/tf2_textures_024.vpk                            |      3 +
- tf/tf2_textures_025.vpk                            |      3 +
- tf/tf2_textures_026.vpk                            |      3 +
- tf/tf2_textures_027.vpk                            |      3 +
- tf/tf2_textures_028.vpk                            |      3 +
- tf/tf2_textures_029.vpk                            |      3 +
- tf/tf2_textures_030.vpk                            |      3 +
- tf/tf2_textures_031.vpk                            |      3 +
- tf/tf2_textures_032.vpk                            |      3 +
- tf/tf2_textures_033.vpk                            |      3 +
- tf/tf2_textures_034.vpk                            |      3 +
- tf/tf2_textures_035.vpk                            |      3 +
- tf/tf2_textures_036.vpk                            |      3 +
- tf/tf2_textures_037.vpk                            |      3 +
- tf/tf2_textures_038.vpk                            |      3 +
- tf/tf2_textures_039.vpk                            |      3 +
- tf/tf2_textures_040.vpk                            |      3 +
- tf/tf2_textures_041.vpk                            |      3 +
- tf/tf2_textures_042.vpk                            |      3 +
- tf/tf2_textures_043.vpk                            |      3 +
- tf/tf2_textures_044.vpk                            |      3 +
- tf/tf2_textures_045.vpk                            |      3 +
- tf/tf2_textures_046.vpk                            |      3 +
- tf/tf2_textures_047.vpk                            |      3 +
- tf/tf2_textures_048.vpk                            |      3 +
- tf/tf2_textures_049.vpk                            |      3 +
- tf/tf2_textures_050.vpk                            |      3 +
- tf/tf2_textures_051.vpk                            |      3 +
- tf/tf2_textures_052.vpk                            |      3 +
- tf/tf2_textures_053.vpk                            |      3 +
- tf/tf2_textures_054.vpk                            |      3 +
- tf/tf2_textures_055.vpk                            |      3 +
- tf/tf2_textures_056.vpk                            |      3 +
- tf/tf2_textures_057.vpk                            |      3 +
- tf/tf2_textures_058.vpk                            |      3 +
- tf/tf2_textures_059.vpk                            |      3 +
- tf/tf2_textures_060.vpk                            |      3 +
- tf/tf2_textures_061.vpk                            |      3 +
- tf/tf2_textures_062.vpk                            |      3 +
- tf/tf2_textures_063.vpk                            |      3 +
- tf/tf2_textures_064.vpk                            |      3 +
- tf/tf2_textures_065.vpk                            |      3 +
- tf/tf2_textures_066.vpk                            |      3 +
- tf/tf2_textures_067.vpk                            |      3 +
- tf/tf2_textures_068.vpk                            |      3 +
- tf/tf2_textures_069.vpk                            |      3 +
- tf/tf2_textures_070.vpk                            |      3 +
- tf/tf2_textures_071.vpk                            |      3 +
- tf/tf2_textures_072.vpk                            |      3 +
- tf/tf2_textures_073.vpk                            |      3 +
- tf/tf2_textures_074.vpk                            |      3 +
- tf/tf2_textures_075.vpk                            |      3 +
- tf/tf2_textures_076.vpk                            |      3 +
- tf/tf2_textures_077.vpk                            |      3 +
- tf/tf2_textures_078.vpk                            |      3 +
- tf/tf2_textures_079.vpk                            |      3 +
- tf/tf2_textures_080.vpk                            |      3 +
- tf/tf2_textures_081.vpk                            |      3 +
- tf/tf2_textures_082.vpk                            |      3 +
- tf/tf2_textures_083.vpk                            |      3 +
- tf/tf2_textures_084.vpk                            |      3 +
- tf/tf2_textures_dir.vpk                            |      3 +
- .../models/player/demo/demo_definebones.qci        |    112 +
- .../player/engineer/engineer_definebones.qci       |     96 +
- .../models/player/heavy/heavy_definebones.qci      |    100 +
- .../models/player/medic/medic_definebones.qci      |    142 +
- .../models/player/pyro/pyro_definebones.qci        |    106 +
- .../models/player/scout/scout_definebones.qci      |    105 +
- .../models/player/sniper/sniper_definebones.qci    |     99 +
- .../models/player/soldier/soldier_definebones.qci  |    123 +
- .../content/models/player/spy/spy_definebones.qci  |    113 +
- .../anim_macros/tf_weightlists.qci                 |    208 +
- .../player/tf_animation_rules/ruleshierarchy.qci   |     14 +
- .../player/tf_animation_rules/tf_macros_list.qci   |     36 +
- thirdpartylegalnotices.txt                         |    875 +
- 1253 files changed, 276149 insertions(+)
+ .private-action                                    |      2 +-
+ __steamcmd/linux32/crashhandler.so                 |      2 +-
+ __steamcmd/linux32/libstdc++.so.6                  |    Bin 922059 -> 922064 bytes
+ __steamcmd/linux32/libtier0_s.so                   |      2 +-
+ __steamcmd/linux32/libvstdlib_s.so                 |      4 +-
+ __steamcmd/linux32/steamclient.so                  |      4 +-
+ __steamcmd/linux32/steamcmd                        |    Bin 5190488 -> 5223049 bytes
+ __steamcmd/linux32/steamconsole.so                 |      4 +-
+ __steamcmd/linux32/steamerrorreporter              |    Bin 130612 -> 130612 bytes
+ __steamcmd/linux64/steamclient.so                  |      4 +-
+ __steamcmd/package/steam_cmd_linux.installed       |     32 +-
+ __steamcmd/package/steam_cmd_linux.manifest        |     36 +-
+ ...186bec4abec5d6a7fd92f61c26b02f68d507cc_14711419 |    Bin 14711172 -> 0 bytes
+ ...3ab7dfe35876c951abf83aec21d2640c5db0f24_1581407 |    Bin 1581387 -> 0 bytes
+ ...abf53f48603d0f8e14468e586dad6113c4c72f_36157276 |    Bin 36156713 -> 0 bytes
+ __steamcmd/public/steambootstrapper_brazilian.txt  |    164 +-
+ __steamcmd/public/steambootstrapper_bulgarian.txt  |    164 +-
+ __steamcmd/public/steambootstrapper_czech.txt      |    164 +-
+ __steamcmd/public/steambootstrapper_danish.txt     |    164 +-
+ __steamcmd/public/steambootstrapper_dutch.txt      |    164 +-
+ __steamcmd/public/steambootstrapper_english.txt    |     88 +-
+ __steamcmd/public/steambootstrapper_finnish.txt    |    164 +-
+ __steamcmd/public/steambootstrapper_french.txt     |    164 +-
+ __steamcmd/public/steambootstrapper_german.txt     |    164 +-
+ __steamcmd/public/steambootstrapper_greek.txt      |    164 +-
+ __steamcmd/public/steambootstrapper_hungarian.txt  |    164 +-
+ __steamcmd/public/steambootstrapper_italian.txt    |    164 +-
+ __steamcmd/public/steambootstrapper_japanese.txt   |    164 +-
+ __steamcmd/public/steambootstrapper_korean.txt     |    164 +-
+ __steamcmd/public/steambootstrapper_koreana.txt    |    164 +-
+ __steamcmd/public/steambootstrapper_latam.txt      |    164 +-
+ __steamcmd/public/steambootstrapper_norwegian.txt  |    164 +-
+ __steamcmd/public/steambootstrapper_polish.txt     |    164 +-
+ __steamcmd/public/steambootstrapper_portuguese.txt |    164 +-
+ __steamcmd/public/steambootstrapper_romanian.txt   |    164 +-
+ __steamcmd/public/steambootstrapper_russian.txt    |    164 +-
+ __steamcmd/public/steambootstrapper_schinese.txt   |    164 +-
+ __steamcmd/public/steambootstrapper_spanish.txt    |    164 +-
+ __steamcmd/public/steambootstrapper_swedish.txt    |    164 +-
+ __steamcmd/public/steambootstrapper_tchinese.txt   |    164 +-
+ __steamcmd/public/steambootstrapper_thai.txt       |    164 +-
+ __steamcmd/public/steambootstrapper_turkish.txt    |    164 +-
+ __steamcmd/public/steambootstrapper_ukrainian.txt  |    164 +-
+ __steamcmd/public/steambootstrapper_vietnamese.txt |    164 +-
+ __steamcmd/siteserverui/linux64/LICENSE            |     40 +-
+ .../siteserverui/linux64/LICENSES.chromium.html    |  70506 ++--
+ __steamcmd/siteserverui/linux64/resources/app.asar |    Bin 25640010 -> 25811299 bytes
+ __steamcmd/siteserverui/linux64/siteserverui       |    Bin 73936109 -> 73936840 bytes
+ __steamcmd_linux.tar.gz                            |    Bin 2428523 -> 2428561 bytes
+ bin/AdminServer.dll                                |      2 +-
+ bin/FileSystem_Stdio.dll                           |      2 +-
+ bin/GameUI.dll                                     |      2 +-
+ bin/MakeScenesImage.exe                            |      2 +-
+ bin/MaterialSystem.dll                             |      2 +-
+ bin/ServerBrowser.dll                              |      2 +-
+ bin/StudioRender.dll                               |      2 +-
+ bin/bsppack.dll                                    |      2 +-
+ bin/bspzip.exe                                     |      4 +-
+ bin/bugreporter_public.dll                         |      2 +-
+ bin/captioncompiler.exe                            |      2 +-
+ bin/datacache.dll                                  |      2 +-
+ bin/dmxconvert.exe                                 |      2 +-
+ bin/dmxedit.exe                                    |      2 +-
+ bin/elementviewer.exe                              |      2 +-
+ bin/engine.dll                                     |      2 +-
+ bin/glview.exe                                     |      2 +-
+ bin/hammer.exe                                     |      2 +-
+ bin/hammer_dll.dll                                 |      2 +-
+ bin/haptics.dll                                    |      2 +-
+ bin/height2normal.exe                              |      2 +-
+ bin/height2ssbump.exe                              |      2 +-
+ bin/hlfaceposer.exe                                |      2 +-
+ bin/hlmv.exe                                       |      2 +-
+ bin/inputsystem.dll                                |      2 +-
+ bin/itemtest.com                                   |      2 +-
+ bin/launcher.dll                                   |      2 +-
+ bin/mksheet.exe                                    |      2 +-
+ bin/motionmapper.exe                               |      2 +-
+ bin/normal2ssbump.exe                              |      2 +-
+ bin/pfm2tgas.exe                                   |      2 +-
+ bin/replay.dll                                     |      2 +-
+ bin/serverplugin_empty.dll                         |      2 +-
+ bin/shaderapidx9.dll                               |      2 +-
+ bin/shadercompile_dll.dll                          |      2 +-
+ bin/soundsystem.dll                                |      2 +-
+ bin/sourcevr.dll                                   |      2 +-
+ bin/splitskybox.exe                                |      2 +-
+ bin/steam_api.dll                                  |      4 +-
+ bin/steamnetworkingsockets.dll                     |      3 -
+ bin/studiomdl.exe                                  |      2 +-
+ bin/texturecompile_dll.dll                         |      2 +-
+ bin/tools/commedit.dll                             |      2 +-
+ bin/tools/pet.dll                                  |      2 +-
+ bin/tools/vmt.dll                                  |      2 +-
+ bin/vaudio_miles.dll                               |      2 +-
+ bin/vbsp.exe                                       |      2 +-
+ bin/vbspinfo.exe                                   |      2 +-
+ bin/vgui2.dll                                      |      2 +-
+ bin/vguimatsurface.dll                             |      2 +-
+ bin/video_bink.dll                                 |      2 +-
+ bin/video_quicktime.dll                            |      2 +-
+ bin/video_services.dll                             |      2 +-
+ bin/vphysics.dll                                   |      2 +-
+ bin/vpk.exe                                        |      2 +-
+ bin/vrad_dll.dll                                   |      2 +-
+ bin/vtex.exe                                       |      2 +-
+ bin/vtex_dll.dll                                   |      2 +-
+ bin/vtf2tga.exe                                    |      2 +-
+ bin/vvis_dll.dll                                   |      2 +-
+ steamapps/appmanifest_440.acf                      |     23 +-
+ steamapps/libraryfolders.vdf                       |      2 +-
+ tf/bin/client.dll                                  |      4 +-
+ tf/bin/server.dll                                  |      4 +-
+ tf/maps/ctf_gorge.bsp                              |      4 +-
+ tf/maps/ctf_hellfire.bsp                           |      4 +-
+ tf/maps/ctf_thundermountain.bsp                    |      4 +-
+ tf/maps/koth_megalo.bsp                            |      3 +
+ tf/maps/koth_undergrove_event.bsp                  |      3 +
+ tf/maps/pl_bloodwater.bsp                          |      3 +
+ tf/maps/pl_hasslecastle.bsp                        |      3 +
+ tf/resource/tf_brazilian.txt                       |    Bin 5035784 -> 5064192 bytes
+ tf/resource/tf_bulgarian.txt                       |    Bin 5104378 -> 5104418 bytes
+ tf/resource/tf_czech.txt                           |    Bin 4924842 -> 4925216 bytes
+ tf/resource/tf_danish.txt                          |    Bin 4922126 -> 4990260 bytes
+ tf/resource/tf_dutch.txt                           |    Bin 4948466 -> 4991274 bytes
+ tf/resource/tf_english.txt                         |    Bin 2329088 -> 2349566 bytes
+ tf/resource/tf_finnish.txt                         |    Bin 4635384 -> 4668228 bytes
+ tf/resource/tf_french.txt                          |    Bin 5118346 -> 5127598 bytes
+ tf/resource/tf_german.txt                          |    Bin 5005674 -> 5006240 bytes
+ tf/resource/tf_greek.txt                           |    Bin 5100582 -> 5100990 bytes
+ tf/resource/tf_hungarian.txt                       |    Bin 5007918 -> 5010546 bytes
+ tf/resource/tf_italian.txt                         |    Bin 5195902 -> 5196284 bytes
+ tf/resource/tf_norwegian.txt                       |    Bin 3088260 -> 3110294 bytes
+ tf/resource/tf_polish.txt                          |    Bin 5048856 -> 5049210 bytes
+ tf/resource/tf_portuguese.txt                      |    Bin 5208686 -> 5208962 bytes
+ tf/resource/tf_proto_obj_defs_dutch.txt            |    Bin 198226 -> 206322 bytes
+ tf/resource/tf_proto_obj_defs_english.txt          |    Bin 102962 -> 107650 bytes
+ tf/resource/tf_proto_obj_defs_spanish.txt          |    Bin 261284 -> 261292 bytes
+ tf/resource/tf_proto_obj_defs_tchinese.txt         |    Bin 19272 -> 22462 bytes
+ tf/resource/tf_quests_brazilian.txt                |    Bin 179458 -> 179456 bytes
+ tf/resource/tf_russian.txt                         |    Bin 4994140 -> 4994488 bytes
+ tf/resource/tf_schinese.txt                        |    Bin 4103280 -> 4137344 bytes
+ tf/resource/tf_spanish.txt                         |    Bin 5130502 -> 5130670 bytes
+ tf/resource/tf_tchinese.txt                        |    Bin 3918148 -> 3918956 bytes
+ tf/resource/tf_thai.txt                            |    Bin 4853290 -> 4895732 bytes
+ tf/resource/tf_turkish.txt                         |    Bin 4918844 -> 4922656 bytes
+ tf/resource/tf_ukrainian.txt                       |    Bin 5005842 -> 5006160 bytes
+ tf/scripts/items/items_game.txt                    | 380161 +++++++++---------
+ tf/scripts/items/items_game.txt.sig                |      2 +-
+ tf/scripts/protodefs/proto_defs.vpd                |      4 +-
+ tf/scripts/protodefs/proto_defs.vpd.sig            |      2 +-
+ tf/steam.inf                                       |     12 +-
+ tf/tf2_misc_000.vpk                                |      4 +-
+ tf/tf2_misc_003.vpk                                |      4 +-
+ tf/tf2_misc_004.vpk                                |      4 +-
+ tf/tf2_misc_006.vpk                                |      4 +-
+ tf/tf2_misc_007.vpk                                |      4 +-
+ tf/tf2_misc_008.vpk                                |      4 +-
+ tf/tf2_misc_010.vpk                                |      4 +-
+ tf/tf2_misc_011.vpk                                |      4 +-
+ tf/tf2_misc_012.vpk                                |      4 +-
+ tf/tf2_misc_013.vpk                                |      4 +-
+ tf/tf2_misc_014.vpk                                |      4 +-
+ tf/tf2_misc_017.vpk                                |      4 +-
+ tf/tf2_misc_018.vpk                                |      4 +-
+ tf/tf2_misc_019.vpk                                |      4 +-
+ tf/tf2_misc_020.vpk                                |      4 +-
+ tf/tf2_misc_021.vpk                                |      3 +
+ tf/tf2_misc_dir.vpk                                |      4 +-
+ tf/tf2_textures_006.vpk                            |      4 +-
+ tf/tf2_textures_009.vpk                            |      4 +-
+ tf/tf2_textures_012.vpk                            |      4 +-
+ tf/tf2_textures_015.vpk                            |      4 +-
+ tf/tf2_textures_024.vpk                            |      4 +-
+ tf/tf2_textures_032.vpk                            |      4 +-
+ tf/tf2_textures_037.vpk                            |      4 +-
+ tf/tf2_textures_038.vpk                            |      4 +-
+ tf/tf2_textures_048.vpk                            |      4 +-
+ tf/tf2_textures_061.vpk                            |      4 +-
+ tf/tf2_textures_069.vpk                            |      4 +-
+ tf/tf2_textures_070.vpk                            |      4 +-
+ tf/tf2_textures_071.vpk                            |      4 +-
+ tf/tf2_textures_079.vpk                            |      4 +-
+ tf/tf2_textures_083.vpk                            |      4 +-
+ tf/tf2_textures_085.vpk                            |      3 +
+ tf/tf2_textures_086.vpk                            |      3 +
+ tf/tf2_textures_dir.vpk                            |      4 +-
+ 187 files changed, 228994 insertions(+), 226822 deletions(-)
