@@ -1,19 +1,7 @@
- bin/FileSystem_Stdio.dll            |   2 +-
- steamapps/appmanifest_440.acf       |  18 +--
- tf/bin/client.dll                   |   2 +-
- tf/bin/server.dll                   |   4 +-
- tf/maps/koth_megalo.bsp             |   4 +-
- tf/maps/pl_bloodwater.bsp           |   4 +-
- tf/resource/tf_danish.txt           | Bin 4990260 -> 4990258 bytes
- tf/resource/tf_dutch.txt            | Bin 4991274 -> 4991896 bytes
- tf/resource/tf_english.txt          | Bin 2349566 -> 2349974 bytes
- tf/resource/tf_swedish.txt          | Bin 4672338 -> 4678282 bytes
- tf/scripts/items/items_game.txt     | 234 ++++++++++++++++++++++++++++++++++--
- tf/scripts/items/items_game.txt.sig |   2 +-
- tf/steam.inf                        |   6 +-
- tf/tf2_misc_010.vpk                 |   4 +-
- tf/tf2_misc_014.vpk                 |   2 +-
- tf/tf2_misc_dir.vpk                 |   4 +-
- tf/tf2_textures_037.vpk             |   4 +-
- tf/tf2_textures_dir.vpk             |   4 +-
- 18 files changed, 256 insertions(+), 38 deletions(-)
+ steamapps/appmanifest_440.acf       | 14 +++++++-------
+ tf/scripts/items/items_game.txt     | 10 +++++-----
+ tf/scripts/items/items_game.txt.sig |  2 +-
+ tf/steam.inf                        |  6 +++---
+ tf/tf2_misc_010.vpk                 |  4 ++--
+ tf/tf2_misc_dir.vpk                 |  2 +-
+ 6 files changed, 19 insertions(+), 19 deletions(-)
