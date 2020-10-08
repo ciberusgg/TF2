@@ -1,7 +1,98 @@
- steamapps/appmanifest_440.acf       | 14 +++++++-------
- tf/scripts/items/items_game.txt     | 10 +++++-----
- tf/scripts/items/items_game.txt.sig |  2 +-
- tf/steam.inf                        |  6 +++---
- tf/tf2_misc_010.vpk                 |  4 ++--
- tf/tf2_misc_dir.vpk                 |  2 +-
- 6 files changed, 19 insertions(+), 19 deletions(-)
+ __steamcmd/linux32/crashhandler.so                 |   4 +-
+ __steamcmd/linux32/libtier0_s.so                   |   2 +-
+ __steamcmd/linux32/libvstdlib_s.so                 |   4 +-
+ __steamcmd/linux32/steamclient.so                  |   4 +-
+ __steamcmd/linux32/steamcmd                        | Bin 5223049 -> 5271696 bytes
+ __steamcmd/linux32/steamconsole.so                 |   4 +-
+ __steamcmd/linux32/steamerrorreporter              | Bin 130612 -> 130612 bytes
+ __steamcmd/linux64/steamclient.so                  |   4 +-
+ __steamcmd/package/steam_cmd_linux.installed       |  88 +++++++--------
+ __steamcmd/package/steam_cmd_linux.manifest        |  44 ++++----
+ ....a2579d4f33558caf8a7a8b18ef7e526a9feb1d5d_28154 | Bin 28154 -> 0 bytes
+ __steamcmd/public/steambootstrapper_brazilian.txt  | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_bulgarian.txt  | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_czech.txt      | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_danish.txt     | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_dutch.txt      | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_finnish.txt    | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_french.txt     | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_german.txt     | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_greek.txt      | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_hungarian.txt  | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_italian.txt    | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_japanese.txt   | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_korean.txt     | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_koreana.txt    | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_latam.txt      | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_norwegian.txt  | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_polish.txt     | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_portuguese.txt | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_romanian.txt   | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_russian.txt    | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_schinese.txt   | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_spanish.txt    | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_swedish.txt    | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_tchinese.txt   | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_thai.txt       | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_turkish.txt    | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_ukrainian.txt  | 120 +++++++--------------
+ __steamcmd/public/steambootstrapper_vietnamese.txt | 120 +++++++--------------
+ __steamcmd/siteserverui/linux64/resources/app.asar | Bin 25811299 -> 26059770 bytes
+ bin/FileSystem_Stdio.dll                           |   2 +-
+ steamapps/appmanifest_440.acf                      |  18 ++--
+ steamapps/libraryfolders.vdf                       |   2 +-
+ tf/bin/client.dll                                  |   2 +-
+ tf/bin/server.dll                                  |   4 +-
+ tf/maps/koth_megalo.bsp                            |   4 +-
+ tf/maps/pl_bloodwater.bsp                          |   4 +-
+ tf/maps/pl_hasslecastle.bsp                        |   4 +-
+ tf/maps/pl_precipice_event_final.bsp               |   4 +-
+ tf/resource/tf_brazilian.txt                       | Bin 5064192 -> 5064494 bytes
+ tf/resource/tf_dutch.txt                           | Bin 4991896 -> 5012110 bytes
+ tf/resource/tf_english.txt                         | Bin 2349974 -> 2350148 bytes
+ tf/resource/tf_german.txt                          | Bin 5006240 -> 5019712 bytes
+ tf/resource/tf_greek.txt                           | Bin 5100990 -> 5147330 bytes
+ tf/resource/tf_hungarian.txt                       | Bin 5010546 -> 5011916 bytes
+ tf/resource/tf_italian.txt                         | Bin 5196284 -> 5242684 bytes
+ tf/resource/tf_norwegian.txt                       | Bin 3110294 -> 3110692 bytes
+ tf/resource/tf_polish.txt                          | Bin 5049210 -> 5097206 bytes
+ tf/resource/tf_portuguese.txt                      | Bin 5208962 -> 5254680 bytes
+ tf/resource/tf_proto_obj_defs_brazilian.txt        | Bin 258992 -> 258996 bytes
+ tf/resource/tf_proto_obj_defs_bulgarian.txt        | Bin 264430 -> 270956 bytes
+ tf/resource/tf_proto_obj_defs_czech.txt            | Bin 260226 -> 260230 bytes
+ tf/resource/tf_proto_obj_defs_danish.txt           | Bin 258402 -> 258406 bytes
+ tf/resource/tf_proto_obj_defs_dutch.txt            | Bin 206322 -> 208952 bytes
+ tf/resource/tf_proto_obj_defs_english.txt          | Bin 107650 -> 107624 bytes
+ tf/resource/tf_proto_obj_defs_finnish.txt          | Bin 261254 -> 261258 bytes
+ tf/resource/tf_proto_obj_defs_french.txt           | Bin 265520 -> 265524 bytes
+ tf/resource/tf_proto_obj_defs_german.txt           | Bin 265734 -> 265738 bytes
+ tf/resource/tf_proto_obj_defs_greek.txt            | Bin 262982 -> 272832 bytes
+ tf/resource/tf_proto_obj_defs_hungarian.txt        | Bin 260724 -> 260732 bytes
+ tf/resource/tf_proto_obj_defs_italian.txt          | Bin 265908 -> 275410 bytes
+ tf/resource/tf_proto_obj_defs_norwegian.txt        | Bin 206078 -> 206082 bytes
+ tf/resource/tf_proto_obj_defs_polish.txt           | Bin 258008 -> 267896 bytes
+ tf/resource/tf_proto_obj_defs_portuguese.txt       | Bin 262760 -> 272674 bytes
+ tf/resource/tf_proto_obj_defs_romanian.txt         | Bin 227680 -> 227684 bytes
+ tf/resource/tf_proto_obj_defs_russian.txt          | Bin 253760 -> 253764 bytes
+ tf/resource/tf_proto_obj_defs_schinese.txt         | Bin 225762 -> 225766 bytes
+ tf/resource/tf_proto_obj_defs_spanish.txt          | Bin 261292 -> 271280 bytes
+ tf/resource/tf_proto_obj_defs_swedish.txt          | Bin 255266 -> 255270 bytes
+ tf/resource/tf_proto_obj_defs_thai.txt             | Bin 255854 -> 265200 bytes
+ tf/resource/tf_proto_obj_defs_turkish.txt          | Bin 257994 -> 257998 bytes
+ tf/resource/tf_proto_obj_defs_ukrainian.txt        | Bin 258566 -> 258570 bytes
+ tf/resource/tf_quests_greek.txt                    | Bin 183446 -> 183444 bytes
+ tf/resource/tf_russian.txt                         | Bin 4994488 -> 5039168 bytes
+ tf/resource/tf_schinese.txt                        | Bin 4137344 -> 4142806 bytes
+ tf/resource/tf_spanish.txt                         | Bin 5130670 -> 5176666 bytes
+ tf/resource/tf_tchinese.txt                        | Bin 3918956 -> 3919754 bytes
+ tf/resource/tf_ukrainian.txt                       | Bin 5006160 -> 5050840 bytes
+ tf/scripts/items/items_game.txt                    |  36 +++++--
+ tf/scripts/items/items_game.txt.sig                |   2 +-
+ tf/scripts/protodefs/proto_defs.vpd                |   4 +-
+ tf/scripts/protodefs/proto_defs.vpd.sig            |   2 +-
+ tf/steam.inf                                       |   6 +-
+ tf/tf2_misc_010.vpk                                |   2 +-
+ tf/tf2_misc_dir.vpk                                |   2 +-
+ tf/tf2_textures_037.vpk                            |   2 +-
+ tf/tf2_textures_dir.vpk                            |   2 +-
+ 97 files changed, 1285 insertions(+), 2331 deletions(-)
