@@ -1,50 +1,38 @@
- bin/FileSystem_Stdio.dll                     |   2 +-
- steamapps/appmanifest_440.acf                |  18 +++++++++---------
- steamapps/libraryfolders.vdf                 |   2 +-
- tf/bin/client.dll                            |   4 ++--
- tf/bin/server.dll                            |   2 +-
- tf/maps/koth_undergrove_event.bsp            |   4 ++--
- tf/maps/pl_hasslecastle.bsp                  |   4 ++--
- tf/resource/tf_brazilian.txt                 | Bin 5064494 -> 5088480 bytes
- tf/resource/tf_bulgarian.txt                 | Bin 5104418 -> 5104996 bytes
- tf/resource/tf_czech.txt                     | Bin 4969592 -> 4969996 bytes
- tf/resource/tf_danish.txt                    | Bin 4990258 -> 5017152 bytes
- tf/resource/tf_dutch.txt                     | Bin 5012110 -> 5013418 bytes
- tf/resource/tf_finnish.txt                   | Bin 4668228 -> 4670796 bytes
- tf/resource/tf_french.txt                    | Bin 5127598 -> 5174048 bytes
- tf/resource/tf_german.txt                    | Bin 5019712 -> 5020092 bytes
- tf/resource/tf_greek.txt                     | Bin 5147330 -> 5147724 bytes
- tf/resource/tf_hungarian.txt                 | Bin 5011916 -> 5055066 bytes
- tf/resource/tf_italian.txt                   | Bin 5242684 -> 5242482 bytes
- tf/resource/tf_norwegian.txt                 | Bin 3138678 -> 3155842 bytes
- tf/resource/tf_polish.txt                    | Bin 5097206 -> 5097600 bytes
- tf/resource/tf_portuguese.txt                | Bin 5254680 -> 5255078 bytes
- tf/resource/tf_proto_obj_defs_brazilian.txt  | Bin 258996 -> 259312 bytes
- tf/resource/tf_proto_obj_defs_bulgarian.txt  | Bin 270956 -> 274508 bytes
- tf/resource/tf_proto_obj_defs_czech.txt      | Bin 270152 -> 270468 bytes
- tf/resource/tf_proto_obj_defs_dutch.txt      | Bin 213374 -> 218904 bytes
- tf/resource/tf_proto_obj_defs_french.txt     | Bin 265524 -> 265852 bytes
- tf/resource/tf_proto_obj_defs_greek.txt      | Bin 272832 -> 273160 bytes
- tf/resource/tf_proto_obj_defs_hungarian.txt  | Bin 267080 -> 270764 bytes
- tf/resource/tf_proto_obj_defs_italian.txt    | Bin 275410 -> 275722 bytes
- tf/resource/tf_proto_obj_defs_norwegian.txt  | Bin 206082 -> 212800 bytes
- tf/resource/tf_proto_obj_defs_polish.txt     | Bin 267896 -> 268216 bytes
- tf/resource/tf_proto_obj_defs_portuguese.txt | Bin 272674 -> 272988 bytes
- tf/resource/tf_proto_obj_defs_russian.txt    | Bin 263544 -> 263822 bytes
- tf/resource/tf_proto_obj_defs_schinese.txt   | Bin 225766 -> 227008 bytes
- tf/resource/tf_proto_obj_defs_spanish.txt    | Bin 271280 -> 271594 bytes
- tf/resource/tf_proto_obj_defs_swedish.txt    | Bin 255270 -> 261600 bytes
- tf/resource/tf_proto_obj_defs_turkish.txt    | Bin 257998 -> 258312 bytes
- tf/resource/tf_proto_obj_defs_ukrainian.txt  | Bin 258570 -> 268710 bytes
- tf/resource/tf_quests_swedish.txt            | Bin 178600 -> 178600 bytes
- tf/resource/tf_russian.txt                   | Bin 5039168 -> 5039562 bytes
- tf/resource/tf_schinese.txt                  | Bin 4142806 -> 4158692 bytes
- tf/resource/tf_spanish.txt                   | Bin 5176666 -> 5177072 bytes
- tf/resource/tf_swedish.txt                   | Bin 4678282 -> 4694284 bytes
- tf/resource/tf_thai.txt                      | Bin 4895732 -> 4940254 bytes
- tf/resource/tf_turkish.txt                   | Bin 4922656 -> 4929320 bytes
- tf/resource/tf_ukrainian.txt                 | Bin 5050790 -> 5051440 bytes
- tf/scripts/items/items_game.txt              |   1 -
- tf/scripts/items/items_game.txt.sig          |   2 +-
- tf/steam.inf                                 |   6 +++---
- 49 files changed, 22 insertions(+), 23 deletions(-)
+ __steamcmd/linux32/crashhandler.so           |    2 +-
+ __steamcmd/linux32/steamclient.so            |    4 +-
+ __steamcmd/linux32/steamcmd                  |  Bin 5271696 -> 5271696 bytes
+ __steamcmd/linux32/steamconsole.so           |    2 +-
+ __steamcmd/linux64/steamclient.so            |    4 +-
+ __steamcmd/package/steam_cmd_linux.installed |   16 +-
+ __steamcmd/package/steam_cmd_linux.manifest  |   24 +-
+ steamapps/appmanifest_440.acf                |   14 +-
+ steamapps/libraryfolders.vdf                 |    2 +-
+ tf/maps/pl_bloodwater.bsp                    |    4 +-
+ tf/resource/tf_brazilian.txt                 |  Bin 5088480 -> 5110802 bytes
+ tf/resource/tf_bulgarian.txt                 |  Bin 5104996 -> 5147880 bytes
+ tf/resource/tf_danish.txt                    |  Bin 5017152 -> 5023446 bytes
+ tf/resource/tf_dutch.txt                     |  Bin 5013418 -> 5013456 bytes
+ tf/resource/tf_english.txt                   |  Bin 2350148 -> 2350770 bytes
+ tf/resource/tf_finnish.txt                   |  Bin 4670796 -> 4891540 bytes
+ tf/resource/tf_french.txt                    |  Bin 5174048 -> 5197698 bytes
+ tf/resource/tf_hungarian.txt                 |  Bin 5055066 -> 5055056 bytes
+ tf/resource/tf_italian.txt                   |  Bin 5242482 -> 5241788 bytes
+ tf/resource/tf_proto_obj_defs_brazilian.txt  |  Bin 259312 -> 268928 bytes
+ tf/resource/tf_proto_obj_defs_danish.txt     |  Bin 258406 -> 267236 bytes
+ tf/resource/tf_proto_obj_defs_finnish.txt    |  Bin 261258 -> 268026 bytes
+ tf/resource/tf_proto_obj_defs_french.txt     |  Bin 265852 -> 276156 bytes
+ tf/resource/tf_proto_obj_defs_german.txt     |  Bin 265738 -> 266070 bytes
+ tf/resource/tf_proto_obj_defs_greek.txt      |  Bin 273160 -> 273166 bytes
+ tf/resource/tf_proto_obj_defs_schinese.txt   |  Bin 227008 -> 233460 bytes
+ tf/resource/tf_proto_obj_defs_swedish.txt    |  Bin 261600 -> 262912 bytes
+ tf/resource/tf_proto_obj_defs_thai.txt       |  Bin 265200 -> 265430 bytes
+ tf/resource/tf_proto_obj_defs_turkish.txt    |  Bin 258312 -> 258316 bytes
+ tf/resource/tf_schinese.txt                  |  Bin 4158692 -> 4167042 bytes
+ tf/resource/tf_spanish.txt                   |  Bin 5177072 -> 5177076 bytes
+ tf/resource/tf_swedish.txt                   |  Bin 4694284 -> 4714040 bytes
+ tf/resource/tf_tchinese.txt                  |  Bin 3919754 -> 3919974 bytes
+ tf/resource/tf_turkish.txt                   |  Bin 4929320 -> 4943358 bytes
+ tf/scripts/items/items_game.txt              | 1163 ++++++++++++++------------
+ tf/scripts/items/items_game.txt.sig          |    2 +-
+ tf/steam.inf                                 |    6 +-
+ 37 files changed, 671 insertions(+), 572 deletions(-)
