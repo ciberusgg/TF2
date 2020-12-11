@@ -1,66 +1,45 @@
- bin/FileSystem_Stdio.dll                     |    2 +-
- steamapps/appmanifest_440.acf                |   16 +-
- steamapps/libraryfolders.vdf                 |    2 +-
- tf/bin/client.dll                            |    2 +-
- tf/bin/server.dll                            |    2 +-
- tf/maps/pd_snowville_event.bsp               |    4 +-
- tf/maps/pl_pier.bsp                          |    4 +-
- tf/resource/tf_brazilian.txt                 |  Bin 5114854 -> 5162174 bytes
- tf/resource/tf_bulgarian.txt                 |  Bin 5198770 -> 5198688 bytes
- tf/resource/tf_czech.txt                     |  Bin 4973090 -> 5015760 bytes
- tf/resource/tf_danish.txt                    |  Bin 5034960 -> 5049458 bytes
- tf/resource/tf_dutch.txt                     |  Bin 5015082 -> 5015040 bytes
- tf/resource/tf_english.txt                   |  Bin 2372586 -> 2375488 bytes
- tf/resource/tf_finnish.txt                   |  Bin 4907180 -> 4913554 bytes
- tf/resource/tf_french.txt                    |  Bin 5216844 -> 5217634 bytes
- tf/resource/tf_german.txt                    |  Bin 5023830 -> 5054908 bytes
- tf/resource/tf_greek.txt                     |  Bin 5150810 -> 5194914 bytes
- tf/resource/tf_hungarian.txt                 |  Bin 5058228 -> 5058156 bytes
- tf/resource/tf_italian.txt                   |  Bin 5244956 -> 5290452 bytes
- tf/resource/tf_japanese.txt                  |  Bin 2055738 -> 2055750 bytes
- tf/resource/tf_korean.txt                    |  Bin 3743186 -> 3743152 bytes
- tf/resource/tf_koreana.txt                   |  Bin 3743186 -> 3743152 bytes
- tf/resource/tf_norwegian.txt                 |  Bin 3160620 -> 3160574 bytes
- tf/resource/tf_pirate.txt                    |  Bin 2097224 -> 2097236 bytes
- tf/resource/tf_polish.txt                    |  Bin 5100906 -> 5145368 bytes
- tf/resource/tf_portuguese.txt                |  Bin 5258266 -> 5303366 bytes
- tf/resource/tf_proto_obj_defs_brazilian.txt  |  Bin 269144 -> 272304 bytes
- tf/resource/tf_proto_obj_defs_czech.txt      |  Bin 270468 -> 273558 bytes
- tf/resource/tf_proto_obj_defs_german.txt     |  Bin 266074 -> 268178 bytes
- tf/resource/tf_proto_obj_defs_greek.txt      |  Bin 273166 -> 276256 bytes
- tf/resource/tf_proto_obj_defs_italian.txt    |  Bin 275722 -> 278916 bytes
- tf/resource/tf_proto_obj_defs_polish.txt     |  Bin 268288 -> 271410 bytes
- tf/resource/tf_proto_obj_defs_portuguese.txt |  Bin 272988 -> 276182 bytes
- tf/resource/tf_proto_obj_defs_russian.txt    |  Bin 263822 -> 268538 bytes
- tf/resource/tf_proto_obj_defs_spanish.txt    |  Bin 271594 -> 274746 bytes
- tf/resource/tf_proto_obj_defs_ukrainian.txt  |  Bin 268710 -> 271818 bytes
- tf/resource/tf_quests_spanish.txt            |  Bin 184344 -> 184346 bytes
- tf/resource/tf_romanian.txt                  |  Bin 4756098 -> 4756084 bytes
- tf/resource/tf_russian.txt                   |  Bin 5042696 -> 5086670 bytes
- tf/resource/tf_schinese.txt                  |  Bin 4166940 -> 4166896 bytes
- tf/resource/tf_spanish.txt                   |  Bin 5180240 -> 5224674 bytes
- tf/resource/tf_swedish.txt                   |  Bin 4886270 -> 4890756 bytes
- tf/resource/tf_tchinese.txt                  |  Bin 3919872 -> 3919828 bytes
- tf/resource/tf_thai.txt                      |  Bin 4943364 -> 4946384 bytes
- tf/resource/tf_turkish.txt                   |  Bin 5001594 -> 5002078 bytes
- tf/resource/tf_ukrainian.txt                 |  Bin 5054652 -> 5098354 bytes
- tf/scripts/items/items_game.txt              | 1392 +++++++++++++++++++++++++-
- tf/scripts/items/items_game.txt.sig          |    2 +-
- tf/steam.inf                                 |    6 +-
- tf/tf2_misc_000.vpk                          |    4 +-
- tf/tf2_misc_001.vpk                          |    4 +-
- tf/tf2_misc_006.vpk                          |    4 +-
- tf/tf2_misc_008.vpk                          |    4 +-
- tf/tf2_misc_012.vpk                          |    4 +-
- tf/tf2_misc_013.vpk                          |    4 +-
- tf/tf2_misc_015.vpk                          |    4 +-
- tf/tf2_misc_016.vpk                          |    4 +-
- tf/tf2_misc_018.vpk                          |    4 +-
- tf/tf2_misc_020.vpk                          |    4 +-
- tf/tf2_misc_dir.vpk                          |    2 +-
- tf/tf2_textures_042.vpk                      |    4 +-
- tf/tf2_textures_048.vpk                      |    4 +-
- tf/tf2_textures_072.vpk                      |    2 +-
- tf/tf2_textures_079.vpk                      |    2 +-
- tf/tf2_textures_dir.vpk                      |    2 +-
- 65 files changed, 1426 insertions(+), 62 deletions(-)
+ steamapps/appmanifest_440.acf               |  14 +++++++-------
+ tf/resource/tf_brazilian.txt                | Bin 5162174 -> 5162916 bytes
+ tf/resource/tf_bulgarian.txt                | Bin 5198688 -> 5198656 bytes
+ tf/resource/tf_czech.txt                    | Bin 5015760 -> 5021824 bytes
+ tf/resource/tf_danish.txt                   | Bin 5049458 -> 5052498 bytes
+ tf/resource/tf_dutch.txt                    | Bin 5015040 -> 5031854 bytes
+ tf/resource/tf_english.txt                  | Bin 2375488 -> 2376384 bytes
+ tf/resource/tf_finnish.txt                  | Bin 4913554 -> 4916928 bytes
+ tf/resource/tf_french.txt                   | Bin 5217634 -> 5242188 bytes
+ tf/resource/tf_german.txt                   | Bin 5054908 -> 5087594 bytes
+ tf/resource/tf_greek.txt                    | Bin 5194914 -> 5201050 bytes
+ tf/resource/tf_hungarian.txt                | Bin 5058156 -> 5103780 bytes
+ tf/resource/tf_italian.txt                  | Bin 5290452 -> 5296684 bytes
+ tf/resource/tf_norwegian.txt                | Bin 3160574 -> 3166906 bytes
+ tf/resource/tf_polish.txt                   | Bin 5145368 -> 5151524 bytes
+ tf/resource/tf_portuguese.txt               | Bin 5303366 -> 5309610 bytes
+ tf/resource/tf_proto_obj_defs_dutch.txt     | Bin 218904 -> 219140 bytes
+ tf/resource/tf_proto_obj_defs_german.txt    | Bin 268178 -> 269152 bytes
+ tf/resource/tf_proto_obj_defs_hungarian.txt | Bin 270764 -> 273844 bytes
+ tf/resource/tf_proto_obj_defs_polish.txt    | Bin 271410 -> 271462 bytes
+ tf/resource/tf_proto_obj_defs_swedish.txt   | Bin 266530 -> 266538 bytes
+ tf/resource/tf_proto_obj_defs_thai.txt      | Bin 265430 -> 268520 bytes
+ tf/resource/tf_proto_obj_defs_ukrainian.txt | Bin 271818 -> 271810 bytes
+ tf/resource/tf_romanian.txt                 | Bin 4756084 -> 4756080 bytes
+ tf/resource/tf_russian.txt                  | Bin 5086670 -> 5087034 bytes
+ tf/resource/tf_schinese.txt                 | Bin 4166896 -> 4166864 bytes
+ tf/resource/tf_spanish.txt                  | Bin 5224674 -> 5230944 bytes
+ tf/resource/tf_swedish.txt                  | Bin 4890756 -> 4898008 bytes
+ tf/resource/tf_thai.txt                     | Bin 4946384 -> 4980242 bytes
+ tf/resource/tf_turkish.txt                  | Bin 5002078 -> 5002046 bytes
+ tf/resource/tf_ukrainian.txt                | Bin 5098354 -> 5104454 bytes
+ tf/scripts/items/items_game.txt             |  19 ++++++++++++++++++-
+ tf/scripts/items/items_game.txt.sig         |   2 +-
+ tf/steam.inf                                |   6 +++---
+ tf/tf2_misc_000.vpk                         |   4 ++--
+ tf/tf2_misc_006.vpk                         |   4 ++--
+ tf/tf2_misc_018.vpk                         |   4 ++--
+ tf/tf2_misc_dir.vpk                         |   4 ++--
+ tf/tf2_sound_misc.vpk.sound.cache           |   4 ++--
+ tf/tf2_sound_misc_007.vpk                   |   4 ++--
+ tf/tf2_sound_misc_dir.vpk                   |   4 ++--
+ tf/tf2_sound_vo_english.vpk.sound.cache     |   4 ++--
+ tf/tf2_sound_vo_english_000.vpk             |   4 ++--
+ tf/tf2_sound_vo_english_dir.vpk             |   4 ++--
+ 44 files changed, 49 insertions(+), 32 deletions(-)
