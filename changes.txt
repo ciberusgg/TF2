@@ -1,33 +1,47 @@
- __steamcmd/linux32/crashhandler.so                 |   2 +-
- __steamcmd/linux32/libtier0_s.so                   |   4 +--
- __steamcmd/linux32/libvstdlib_s.so                 |   4 +--
- __steamcmd/linux32/steamclient.so                  |   4 +--
- __steamcmd/linux32/steamcmd                        | Bin 5271696 -> 5210213 bytes
- __steamcmd/linux32/steamconsole.so                 |   4 +--
- __steamcmd/linux32/steamerrorreporter              | Bin 130612 -> 130612 bytes
- __steamcmd/linux64/steamclient.so                  |   4 +--
- __steamcmd/package/steam_cmd_linux.installed       |  32 +++++++++---------
- __steamcmd/package/steam_cmd_linux.manifest        |  36 ++++++++++-----------
- __steamcmd/siteserverui/linux64/resources/app.asar | Bin 26059770 -> 26525305 bytes
- __steamcmd/steamcmd.sh                             |   2 +-
- bin/FileSystem_Stdio.dll                           |   2 +-
- steamapps/appmanifest_440.acf                      |  16 ++++-----
- steamapps/libraryfolders.vdf                       |   2 +-
- tf/bin/client.dll                                  |   2 +-
- tf/maps/ctf_snowfall_final.bsp                     |   4 +--
- tf/maps/pl_wutville_event.bsp                      |   4 +--
- tf/resource/tf_dutch.txt                           | Bin 5031854 -> 5060232 bytes
- tf/resource/tf_german.txt                          | Bin 5087594 -> 5088968 bytes
- tf/resource/tf_hungarian.txt                       | Bin 5103780 -> 5107808 bytes
- tf/resource/tf_russian.txt                         | Bin 5087034 -> 5092810 bytes
- tf/resource/tf_spanish.txt                         | Bin 5230944 -> 5230880 bytes
- tf/scripts/items/items_game.txt                    |  10 +++---
- tf/scripts/items/items_game.txt.sig                |   2 +-
- tf/steam.inf                                       |   6 ++--
- tf/tf2_misc_000.vpk                                |   4 +--
- tf/tf2_misc_009.vpk                                |   4 +--
- tf/tf2_misc_018.vpk                                |   4 +--
- tf/tf2_misc_dir.vpk                                |   4 +--
- tf/tf2_textures_040.vpk                            |   4 +--
- tf/tf2_textures_dir.vpk                            |   4 +--
- 32 files changed, 82 insertions(+), 82 deletions(-)
+ __steamcmd/linux32/crashhandler.so           |   2 +-
+ __steamcmd/linux32/libvstdlib_s.so           |   4 +-
+ __steamcmd/linux32/steamclient.so            |   2 +-
+ __steamcmd/linux32/steamcmd                  | Bin 5210213 -> 5210213 bytes
+ __steamcmd/linux32/steamconsole.so           |   2 +-
+ __steamcmd/linux32/steamerrorreporter        | Bin 130612 -> 130612 bytes
+ __steamcmd/linux64/steamclient.so            |   4 +-
+ __steamcmd/package/steam_cmd_linux.installed |  20 +-
+ __steamcmd/package/steam_cmd_linux.manifest  |  26 +-
+ bin/FileSystem_Stdio.dll                     |   4 +-
+ steamapps/appmanifest_440.acf                |  18 +-
+ steamapps/libraryfolders.vdf                 |   2 +-
+ tf/bin/client.dll                            |   4 +-
+ tf/bin/server.dll                            |   4 +-
+ tf/maps/pl_pier.bsp                          |   4 +-
+ tf/resource/tf_brazilian.txt                 | Bin 5162916 -> 5171422 bytes
+ tf/resource/tf_bulgarian.txt                 | Bin 5198656 -> 5251468 bytes
+ tf/resource/tf_czech.txt                     | Bin 5021824 -> 5023616 bytes
+ tf/resource/tf_danish.txt                    | Bin 5052498 -> 5085548 bytes
+ tf/resource/tf_dutch.txt                     | Bin 5060232 -> 5076292 bytes
+ tf/resource/tf_english.txt                   | Bin 2376384 -> 2381090 bytes
+ tf/resource/tf_finnish.txt                   | Bin 4916928 -> 4932532 bytes
+ tf/resource/tf_french.txt                    | Bin 5242188 -> 5273614 bytes
+ tf/resource/tf_german.txt                    | Bin 5088968 -> 5133176 bytes
+ tf/resource/tf_greek.txt                     | Bin 5201050 -> 5202876 bytes
+ tf/resource/tf_hungarian.txt                 | Bin 5107808 -> 5109600 bytes
+ tf/resource/tf_italian.txt                   | Bin 5296684 -> 5298540 bytes
+ tf/resource/tf_norwegian.txt                 | Bin 3166906 -> 3195086 bytes
+ tf/resource/tf_polish.txt                    | Bin 5151524 -> 5153316 bytes
+ tf/resource/tf_portuguese.txt                | Bin 5309610 -> 5311380 bytes
+ tf/resource/tf_proto_obj_defs_bulgarian.txt  | Bin 274508 -> 277662 bytes
+ tf/resource/tf_proto_obj_defs_danish.txt     | Bin 267240 -> 271282 bytes
+ tf/resource/tf_proto_obj_defs_dutch.txt      | Bin 219140 -> 219364 bytes
+ tf/resource/tf_proto_obj_defs_french.txt     | Bin 276156 -> 279038 bytes
+ tf/resource/tf_proto_obj_defs_german.txt     | Bin 269152 -> 276522 bytes
+ tf/resource/tf_proto_obj_defs_turkish.txt    | Bin 268430 -> 271542 bytes
+ tf/resource/tf_romanian.txt                  | Bin 4756080 -> 4756116 bytes
+ tf/resource/tf_russian.txt                   | Bin 5092810 -> 5093706 bytes
+ tf/resource/tf_spanish.txt                   | Bin 5230880 -> 5232674 bytes
+ tf/resource/tf_swedish.txt                   | Bin 4898008 -> 4912472 bytes
+ tf/resource/tf_thai.txt                      | Bin 4980242 -> 4980690 bytes
+ tf/resource/tf_turkish.txt                   | Bin 5002046 -> 5063534 bytes
+ tf/resource/tf_ukrainian.txt                 | Bin 5104454 -> 5105350 bytes
+ tf/scripts/items/items_game.txt              | 786 +++++++++++++++++++++++++--
+ tf/scripts/items/items_game.txt.sig          |   2 +-
+ tf/steam.inf                                 |   6 +-
+ 46 files changed, 792 insertions(+), 98 deletions(-)
