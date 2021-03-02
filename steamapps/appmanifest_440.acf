@@ -5,13 +5,15 @@
 	"name"		"Team Fortress 2"
 	"StateFlags"		"4"
 	"installdir"		"Team Fortress 2"
-	"LastUpdated"		"1610127071"
+	"LastUpdated"		"1614714926"
 	"UpdateResult"		"0"
-	"SizeOnDisk"		"23694541328"
-	"buildid"		"6056201"
+	"SizeOnDisk"		"23734908088"
+	"buildid"		"6319020"
 	"LastOwner"		"76561199005609651"
-	"BytesToDownload"		"47440112"
-	"BytesDownloaded"		"47440112"
+	"BytesToDownload"		"381273856"
+	"BytesDownloaded"		"381273856"
+	"BytesToStage"		"1416257887"
+	"BytesStaged"		"1416257887"
 	"AutoUpdateBehavior"		"0"
 	"AllowOtherDownloadsWhileRunning"		"0"
 	"ScheduledAutoUpdate"		"0"
@@ -19,8 +21,8 @@
 	{
 		"441"
 		{
-			"manifest"		"1447597768706029398"
-			"size"		"23112784323"
+			"manifest"		"7759285817018818472"
+			"size"		"23153151083"
 		}
 		"440"
 		{
@@ -29,7 +31,7 @@
 		}
 		"232251"
 		{
-			"manifest"		"6437898007164433914"
+			"manifest"		"3775706867391019031"
 			"size"		"580931260"
 		}
 	}
